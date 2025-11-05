@@ -392,6 +392,8 @@ tr:nth-child(even) {
   text-align: center;
   font-size: 32px; 
   font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 15px;
+  color: #fff
 }
 
 .btn {
@@ -414,7 +416,7 @@ tr:nth-child(even) {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #507cfb, #3359f5);
+  background: linear-gradient(135deg, #507cfb, #1947ff);
   box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
   transform: translateY(-2px);
 }
@@ -423,12 +425,12 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-.section-container a.btn {
+.section.container a.btn {
   display: inline-block;
   margin: 10px 15px;
 }
 
-.section-container .btn-group {
+.section.container btn-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
