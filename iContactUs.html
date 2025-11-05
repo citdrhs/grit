@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root{
-      --bg:#0b1020;--panel:#121a33;--panel-2:#0f1630;--text:#eaf0ff;--muted:#c3cbea;
+      --bg:#ffffff;--panel:#ffffff;--panel-2:#ffffff;--text:#000000;--muted:#000000;
       --primary:#5aa7ff;--primary-2:#3f8bff;--accent:#7bffc0;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:16px
     }
     *{box-sizing:border-box}
@@ -23,13 +23,13 @@
     a:hover{color:var(--primary-2)}
     img{max-width:100%;height:auto;display:block}
     .container{width:min(1100px,92vw);margin:0 auto}
-    header{position:sticky;top:0;z-index:40;background:rgba(11,16,32,.7);backdrop-filter:blur(10px);
+    header{position:sticky;top:0;z-index:40;background:#ffffff(11,16,32,.7);backdrop-filter:blur(10px);
       box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{font-weight:700;letter-spacing:.3px}
+    .brand-logo {height: 40px;}
     .nav-links{display:flex;gap:16px;flex-wrap:wrap}
     .nav-links a{color:var(--muted);font-weight:500;padding:8px 10px;border-radius:10px}
-    .nav-links a:hover,.nav-links a:focus{background:rgba(255,255,255,.06);color:var(--text);outline:none}
+    .nav-links a:hover,.nav-links a:focus{background:rgba(255,255,255,.06);color:var(--primary);outline:none}
     .dropdown{position:relative}
     .dropdown>button{background:transparent;border:0;color:var(--muted);font:inherit;cursor:pointer;
       padding:8px 10px;border-radius:10px;display:inline-flex;align-items:center;gap:6px}
@@ -51,7 +51,7 @@
     @media (max-width:900px){.grid-3{grid-template-columns:1fr}}
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);
       padding:18px;box-shadow:var(--shadow)}
-    .card h2{margin:0 0 6px;color:var(--accent);font-size:1.1rem}
+    .card h2{margin:0 0 6px;color:var(--primary);font-size:1.1rem}
     .muted{color:var(--muted)}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;
       border-radius:999px;border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--text);
@@ -69,7 +69,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">GRIT Conference</div>
+      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
       <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>

@@ -11,14 +11,14 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: #121a33;
+      --bg: #ffffff;
+      --panel: #ffffff;
       --panel-2: #0f1630;
-      --text: #eaf0ff;
-      --muted: #c3cbea;
+      --text: #000000;
+      --muted: #000000;
       --primary: #5aa7ff;
-      --primary-2: #3f8bff;
-      --accent: #7bffc0;
+      --primary-2: #faed00;
+      --accent: #000000;
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
     }
@@ -57,9 +57,9 @@
       position: sticky;
       top: 0;
       z-index: 40;
-      background: rgba(11,16,32,.7);
+      background: rgba(248, 249, 251, 0.7);
       backdrop-filter: blur(10px);
-      box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
+      box-shadow: 0 6px 0 #00FFFF(255, 255, 255, 0.06), 0 10px 30px rgba(0,0,0,.2);
     }
     .nav {
       display: flex;
@@ -70,6 +70,7 @@
     .nav img.logo, .nav img.CITlogo {
       height: 40px;
     }
+    .brand-logo {height: 40px;}
     .nav-links {
       display: flex;
       gap: 16px;
@@ -83,7 +84,7 @@
     }
     .nav-links a:hover, .nav-links a:focus {
       background: rgba(255,255,255,.06);
-      color: var(--text);
+      color: var(--primary);
       outline: none;
     }
     .dropdown {
@@ -165,11 +166,11 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">GRIT Conference</div>
+      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
       <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
-        <a href="./core_values.html">Core ValuesT</a>
+        <a href="./core_values.html">Core Values</a>
         <div class="dropdown">
           <button>Interviews ▾</button>
           <div class="menu">
@@ -219,7 +220,7 @@
   </main>
 
   <footer class="footerfeatured">
-      <div>© <span id="year"></span> GRIT Conference · Authors: Viraj K, Adamya S, Blaise B, Safwan H.</div>
+      <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
   </footer>
 
   <script>
