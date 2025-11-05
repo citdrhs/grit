@@ -388,7 +388,7 @@ tr:nth-child(even) {
 
 /* FORM BUTTON STYLING */
 /* By Aditi Inamdar */
-.section.container h2 {
+.section-container h2 {
   text-align: center;
   font-size: 32px; 
   font-family: 'IBM Plex Mono', monospace;
@@ -421,16 +421,16 @@ tr:nth-child(even) {
   transform: translateY(-2px);
 }
 
-.section.container {
+.section-container {
   text-align: center;
 }
 
-.section.container a.btn {
+.section-container a.btn {
   display: inline-block;
   margin: 10px 15px;
 }
 
-.section.container btn-group {
+.section-container btn-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
