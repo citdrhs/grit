@@ -386,7 +386,57 @@ tr:nth-child(even) {
 
 }*/
 
+/* FORM BUTTON STYLING */
+/* By Aditi Inamdar */
+.section-container h2 {
+  text-align: center;
+  font-size: 32px; 
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 15px;
+  color: #fff
+}
 
+.btn {
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.section-container {
+  text-align: center;
+}
+
+.section-container a.btn {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+.section-container btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px
+}
 
 /* ---------------ABOUT THE CIT PAGE STYLING--------------- */
 /* By Anooshka Pendyal */
@@ -876,4 +926,11 @@ a{
   background-color: #004494; /* Even darker on click */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* "Pressed" shadow effect */
   transform: translateY(0);
+}
+
+
+.core_values {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
 }
