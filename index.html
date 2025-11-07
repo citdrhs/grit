@@ -6,16 +6,17 @@
   <title>Home – GRIT Conference</title>
   <link rel="icon" type="image/png" href="./Logo+Option+1..png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: #121a33;
+      --bg: rgb(255, 255, 255);
+      --panel: #ffffff;
       --panel-2: #0f1630;
-      --text: #eaf0ff;
-      --muted: #c3cbea;
+      --text: #000000;
+      --muted: #000000;
       --primary: #5aa7ff;
-      --primary-2: #3f8bff;
-      --accent: #7bffc0;
+      --primary-2: #faed00;
+      --accent: #000000;
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
     }
@@ -54,7 +55,7 @@
       position: sticky;
       top: 0;
       z-index: 40;
-      background: rgba(11,16,32,.7);
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
@@ -80,7 +81,7 @@
     }
     .nav-links a:hover, .nav-links a:focus {
       background: rgba(255,255,255,.06);
-      color: var(--text);
+      color: var(--primary);
       outline: none;
     }
     .dropdown {
@@ -99,13 +100,13 @@
       gap: 6px;
     }
     .dropdown > button:hover, .dropdown > button:focus {
-      background: rgba(255,255,255,.06);
+      background: rgba(255, 255, 255, 0.06);
       color: var(--text);
       outline: none;
     }
     .menu {
       position: absolute;
-      top: calc(100% + 10px);
+      top: calc(100% + 0px);
       left: 0;
       min-width: 220px;
       background: var(--panel);
@@ -129,9 +130,9 @@
       display: block;
     }
     .hero {
-      padding: 80px 0 60px;
+      padding: 30px 0 60px;
       text-align: center;
-      background: radial-gradient(800px 300px at 50% 0%, rgba(90,167,255,.10), transparent);
+      background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
     .hero h1 {
@@ -145,8 +146,13 @@
       max-width: 700px;
       margin: 12px auto 0;
     }
+    .front-image {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px;
+    }
     .video-container {
-      margin: 60px auto;
+      margin: 5px auto;
       text-align: center;
     }
     iframe {
@@ -155,7 +161,7 @@
       box-shadow: var(--shadow);
     }
     .section {
-      padding: 30px 0;
+      padding: 10px 0;
     }
     .section h2 {
       color: var(--accent);
@@ -166,23 +172,6 @@
       max-width: 800px;
       margin: auto;
       text-align: justify;
-    }
-    .podcast-container {
-      margin: 60px auto;
-      text-align: center;
-    }
-    .podcast-container audio {
-      max-width: 560px;
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-      background: var(--panel);
-    }
-    @media (max-width: 600px) {
-      .podcast-container audio {
-        max-width: 90vw;
-      }
     }
     .countdown-container {
       margin: 60px auto;
@@ -209,13 +198,14 @@
     .countdown-container p {
       color: var(--muted);
       font-size: 1.3rem;
-      margin: 10px 0 0;
+      text-align: center;
+      margin: 0px 0 0;
     }
     footer {
-      margin-top: 40px;
-      padding: 28px 0 44px;
+      margin-top: 11px;
+      padding: 28px 0 22px;
       color: var(--muted);
-      border-top: 1px solid rgba(255,255,255,.08);
+      border-top: 1px solid rgba(249, 91, 91, 0.08);
       text-align: center;
     }
   </style>
@@ -264,40 +254,58 @@
   <section class="hero">
     <div class="container">
       <h1>The GRIT Conference</h1>
-      <p>Growing Resources in Information Technology — Deep Run High School’s CIT-hosted conference for innovation and learning.</p>
+      <p>Growing Resources in Information Technology — The Center for Information Technology at Deep Run High School hosts the conference for innovation and learning.</p>
+    </div>
+    <div class="front-image">
+      <img src="image11.jpg" alt="GRIT Conference Photo">
     </div>
   </section>
-  <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UBARJlHKX4o" title="GRIT Conference Video 2023" allowfullscreen></iframe>
-  </div>
-  <main>
-    <section class="section container">
-      <h2>About GRIT</h2>
-      <p>The <b>Growing Resources of Information Technology Conference (GRIT)</b> was created to provide students in Deep Run’s Center for Information Technology with a professional conference experience. With the help of speakers, vendors, alumni, and college representatives, students gain a greater understanding of opportunities in IT and Computer Science. The event offers breakout sessions in Education, Career, and Technology, providing insight into both academic and professional growth within the field.</p>
-      <p>In 2023, the CIT proudly hosted <b>Dr. Vint Cerf</b>—the Father of the Internet—as keynote speaker for the conference, giving students the opportunity to hear from one of the world’s most influential innovators in technology.</p>
-    </section>
-    <section class="section container">
-      <h2>GRIT Podcast</h2>
-      <div class="podcast-container">
-        <audio controls>
-          <source src="GRITPodcast.mp3" type="audio/mpeg">
-          Your browser does not support the audio element. <a href="GRITPodcast.mp3" download>Download the podcast</a> or try a modern browser like Chrome or Firefox.
-        </audio>
-      </div>
-    </section>
-    <section class="section container">
+  <section class="section container">
+    <h2>About GRIT</h2>
+    <p>The <b>Growing Resources of Information Technology Conference (GRIT)</b> was created to provide students in Deep Run’s Center for Information Technology with a professional conference experience. With the help of speakers, vendors, alumni, and college representatives, students gain a greater understanding of opportunities in IT and Computer Science. The event offers breakout sessions in Education, Career, and Technology, providing insight into both academic and professional growth within the field.</p>
+    <p>In 2023, the CIT proudly hosted <b>Dr. Vint Cerf</b>—the Father of the Internet—as keynote speaker for the conference, giving students the opportunity to hear from one of the world’s most influential innovators in technology.</p>
+  </section>
+  <section class="section container">
+    </div>
+
+    <div class="countdown-container">
       <h2>Countdown to GRIT 2026</h2>
-      <div class="countdown-container">
-        <div id="countdown-timer" aria-live="polite">
-          <span id="days"></span> Days
-          <span id="hours"></span> Hours
-          <span id="minutes"></span> Minutes
-          <span id="seconds"></span> Seconds
-        </div>
-        <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EDT</p>
+      <div id="countdown-timer" aria-live="polite">
+        <span id="days"></span> Days
+        <span id="hours"></span> Hours
+        <span id="minutes"></span> Minutes
+        <span id="seconds"></span> Seconds
       </div>
-    </section>
-  </main>
+      <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+    </div>
+
+    <div class="section-container">
+      <h2> Looking to Help Out? </h2>
+      <div class="btn-group">
+        <a id = "button-form" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfu9Ddrh8WXg_ZBuYSnxBcT0xffar0MowJeRepMrfMVkKVEPw/viewform?usp=header" target="_blank">
+          Volunteer Form
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+          Donations Form
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+          Speakers Interest Form
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+          Sponsors Interest Form
+        </a>
+
+        </div>
+    </div>
+
+    
+  </section>
+  
+
+    
   <script>
     document.getElementById('year') ? document.getElementById('year').textContent = new Date().getFullYear() : null;
     function updateCountdown() {
@@ -330,7 +338,7 @@
     setInterval(updateCountdown, 1000);
   </script>
   <footer>
-    <div>© <span id="year"></span> GRIT Conference · Authors: Viraj K, Adamya S, Blaise B, Safwan H.</div>
+    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
   </footer>
 </body>
 </html>

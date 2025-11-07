@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: #121a33;
-      --panel-2: #0f1630;
-      --text: #eaf0ff;
-      --muted: #c3cbea;
+      --bg: #ffffff;
+      --panel: #ffffff;
+      --panel-2: #ffffff;
+      --text: #000000;
+      --muted: #000000;
       --primary: #5aa7ff;
       --primary-2: #3f8bff;
       --accent: #7bffc0;
@@ -36,13 +37,13 @@
     .container { width: min(1100px, 92vw); margin: 0 auto; }
     header {
       position: sticky; top: 0; z-index: 40;
-      background: rgba(11,16,32,0.7);
+      background: #ffffff(11,16,32,0.7);
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 10px 30px rgba(0,0,0,0.2);
     }
     .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
     .nav-left { display: flex; align-items: center; gap: 14px; }
-    .brand { font-weight: 700; letter-spacing: .3px; }
+    .brand-logo {height: 40px;}
     .nav-links { display: flex; gap: 16px; flex-wrap: wrap; }
     .nav-links a { color: var(--muted); font-weight: 500; padding: 8px 10px; border-radius: 10px; }
     .nav-links a:hover, .nav-links a:focus { background: rgba(255,255,255,0.06); color: var(--text); outline: none; }
@@ -87,7 +88,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">GRIT Conference</div>
+      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
       <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
@@ -121,7 +122,6 @@
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
-        <a href="https://teachers.henrico.k12.va.us/deeprun/cit/" target="_blank">CIT</a>
       </nav>
     </div>
   </header>
