@@ -6,6 +6,7 @@ html, body {
   color:black;
   margin: 0px;
   padding: 0px;
+  text-align: center;
 }
 
 /* Navigation bar format */
@@ -316,7 +317,7 @@ section, .desc {
 .aboutgrit {
   border: 2px solid#0063b1;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   background-color: white;
   font-size: 18px;
   border-radius: 20px;
@@ -989,3 +990,4 @@ a{
   line-height: 1.7;
   margin: 0;
 }
+
