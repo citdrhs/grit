@@ -177,11 +177,15 @@
       margin: 60px auto;
       text-align: center;
       background: var(--panel);
-      border-radius: 12px;
+      border-radius: 20px;
       border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
       padding: 20px;
-      max-width: 660px;
+      max-width: 680px;
+    }
+    .countdown-container h2 {
+      font-size: 2.2rem;
+      margin: 10px;
     }
     #countdown-timer {
       justify-content: center;
@@ -193,6 +197,9 @@
       color: var(--accent);
       font-size: 2.5rem;
       font-weight: 600;
+    }
+    .countdown-date {
+      margin-top: 10px;
     }
     .countdown-container p {
       color: var(--muted);
@@ -274,7 +281,9 @@
         <span id="minutes"></span> Minutes
         <span id="seconds"></span> Seconds
       </div>
-      <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+      <div class="countdown-date">
+        <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+      </div>
     </div>
 
     <div class="section-container">
