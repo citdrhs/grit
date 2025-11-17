@@ -106,7 +106,7 @@
     }
     .menu {
       position: absolute;
-      top: calc(100%);
+      top: calc(100% + 0px);
       left: 0;
       min-width: 220px;
       background: var(--panel);
@@ -146,11 +146,6 @@
       max-width: 700px;
       margin: 12px auto 0;
     }
-    .front-image {
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-top: 50px;
-    }
     .video-container {
       margin: 5px auto;
       text-align: center;
@@ -171,23 +166,20 @@
       color: var(--muted);
       max-width: 800px;
       margin: auto;
-      text-align: center;
+      text-align: justify;
     }
     .countdown-container {
       margin: 60px auto;
       text-align: center;
       background: var(--panel);
-      border-radius: 20px;
+      border-radius: 12px;
       border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
       padding: 20px;
-      max-width: 680px;
-    }
-    .countdown-container h2 {
-      font-size: 2.2rem;
-      margin: 10px;
+      max-width: 660px;
     }
     #countdown-timer {
+      display: flex;
       justify-content: center;
       gap: 20px;
       color: var(--muted);
@@ -197,9 +189,6 @@
       color: var(--accent);
       font-size: 2.5rem;
       font-weight: 600;
-    }
-    .countdown-date {
-      margin-top: 10px;
     }
     .countdown-container p {
       color: var(--muted);
@@ -211,6 +200,7 @@
       margin-top: 11px;
       padding: 28px 0 22px;
       color: var(--muted);
+      border-top: 1px solid rgba(249, 91, 91, 0.08);
       text-align: center;
     }
   </style>
@@ -253,6 +243,7 @@
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+        <a href="https://teachers.henrico.k12.va.us/deeprun/cit/" target="_blank">CIT</a>
       </nav>
     </div>
   </header>
@@ -261,9 +252,8 @@
       <h1>The GRIT Conference</h1>
       <p>Growing Resources in Information Technology — The Center for Information Technology at Deep Run High School hosts the conference for innovation and learning.</p>
     </div>
-    <div class="front-image">
-      <img src="image11.jpg" alt="GRIT Conference Photo">
-    </div>
+    <img src="image11.jpg" alt="GRIT Conference Photo">
+    
   </section>
   <section class="section container">
     <h2>About GRIT</h2>
@@ -281,9 +271,7 @@
         <span id="minutes"></span> Minutes
         <span id="seconds"></span> Seconds
       </div>
-      <div class="countdown-date">
-        <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
-      </div>
+      <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
     </div>
 
     <div class="section-container">
@@ -293,18 +281,23 @@
           Volunteer Form
         </a>
 
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+        <a onclick="alert('This form is currently unavailable. Please check again soon.')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Donations Form
         </a>
-
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+          
+        <a onclick="alert('This form is currently unavailable. Please check again soon.')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Speakers Interest Form
         </a>
 
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+        <a onclick="alert('This form is currently unavailable. Please check again soon.')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Sponsors Interest Form
         </a>
 
+        <div id="myPopup" class="popup-overlay">
+          
+
+  </div>
+</div>
         </div>
     </div>
 
