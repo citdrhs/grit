@@ -394,7 +394,7 @@ tr:nth-child(even) {
   font-size: 32px; 
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 15px;
-  color: #fff
+  color: #000000
 }
 
 .btn {
@@ -419,7 +419,7 @@ tr:nth-child(even) {
 .btn-primary:hover {
   background: linear-gradient(135deg, #507cfb, #1947ff);
   box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
-  transform: translateY(-2px);
+  transform: translateY(-2px);transition: all 0.5s ease;
 }
 
 .section-container {

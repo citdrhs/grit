@@ -20,10 +20,10 @@
     .nav-links{display:flex;gap:16px;flex-wrap:wrap}
     .nav-links a{color:var(--muted);font-weight:500;padding:8px 10px;border-radius:10px}
     .nav-links a:hover,.nav-links a:focus{background:rgba(255,255,255,.06);color:var(--primary);outline:none}
-    .dropdown{position:relative}
+    .dropdown{position:relative; margin-bottom: auto;}
     .dropdown>button{background:transparent;border:0;color:var(--muted);font:inherit;cursor:pointer;padding:8px 10px;border-radius:10px;display:inline-flex;align-items:center;gap:6px}
     .dropdown>button:hover,.dropdown>button:focus{background:rgba(255,255,255,.06);color:var(--text);outline:none}
-    .menu{position:absolute;top:calc(100% + 10px);left:0;min-width:220px;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;box-shadow:var(--shadow);display:none}
+    .menu{position:absolute;top:calc(100%);left:0;min-width:220px;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;box-shadow:var(--shadow);display:none}
     .menu a{display:block;padding:10px 12px;border-radius:8px;color:var(--muted)}
     .menu a:hover{background:rgba(255,255,255,.06);color:var(--text)}
     .dropdown:focus-within .menu,.dropdown:hover .menu{display:block}
@@ -33,8 +33,15 @@
     .section{padding:28px 0}
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:30px}
     .card h2{margin-top:0;color:var(--accent)}
-    .button{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--text);font-weight:600}
-    .button:hover{background:rgba(255,255,255,.06)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap: 8px;
+      padding:10px 14px;border-radius:1000px;
+      border:3px solid rgb(90,167,255);
+      background:linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));
+      color:#ffffff;font-weight:600;font-size: 1rem;text-decoration: none;
+      padding: 12px 30px;border: none;border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(59,104,255,0.3); cursor:pointer}
+    .button:hover{background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;
+    box-shadow: 0 6px 14px rgba(59, 104,255,0.4);transform: translateY(-2px);transition: all 0.5s ease;}
     iframe{border-radius:12px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
     figure{margin:0;text-align:center;color:var(--muted)}
     figure img{border-radius:12px;max-width:100%;height:auto;box-shadow:var(--shadow)}
@@ -115,7 +122,7 @@
         <div class="card">
           <h2>Student Reflections</h2>
           <figure>
-            <img src="./CIT_Hallway.jpg" alt="CIT Hallway with CIT classrooms" />
+            <img src="./CIT_Hallway.jpg" alt="CIT Hallway with CIT classrooms" width = "960" height = "569" />
             <figcaption>The CIT Wing in Deep Run High School is at the heart of innovation and learning.</figcaption>
           </figure>
           <fieldset>
@@ -123,6 +130,7 @@
             <p>“The CIT has given me so many opportunities and taught me invaluable lessons. It's a tight-knit community where everyone connects and supports each other. I'm sad to leave, but CIT will always have a special place in my heart.” — <em>Nischal A., Senior</em></p>
             <p>“The CIT has been an incredible experience, blending learning and personal growth. I've gained countless skills—both technical and soft—becoming more confident, proactive, and better at managing my time and presenting. CIT has also given me amazing opportunities in technology, from planning Nine Weeks Projects to completing my Summer Internship. Overall, my experiences in the CIT have been incredible. The teachers and peers are really supportive, and I've thoroughly enjoyed all the different classes and events. I'm truly happy that I’m part of such an amazing community. 
 ” — <em>Shruti D. President of CIT council</em></p>
+            <p> </p>
           </fieldset>
           <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="button">Find out more about the CIT!</a>
         </div>

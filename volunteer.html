@@ -53,7 +53,7 @@
       padding: 8px 10px; border-radius: 10px; display: inline-flex; align-items: center; gap: 6px;
     }
     .dropdown > button:hover, .dropdown > button:focus { background: rgba(255,255,255,0.06); color: var(--text); outline: none; }
-    .menu { position: absolute; top: calc(100% + 10px); left: 0; min-width: 220px;
+    .menu { position: absolute; top: calc(100%); left: 0; min-width: 220px;
       background: var(--panel); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 8px;
       box-shadow: var(--shadow); display: none;
     }
@@ -69,12 +69,14 @@
     .hero h1 { font-size: clamp(28px, 4.5vw, 44px); line-height: 1.1; margin: 0 0 12px; }
     .hero p { margin: 0 0 20px; color: var(--muted); }
     .cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 18px; border-radius: 999px; border: 1px solid transparent; font-weight: 600; cursor: pointer; transition: transform .06s ease; text-align: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border-radius: 1000px; border: 3px solid rgb(90,167,255);background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;font-size: 1rem;text-decoration: none; font-weight: 600;padding: 12px 30px;border: none;border-radius: 999px;box-shadow: 0 4px 10px rgba(59,104,255,0.3); cursor: pointer; }
     .btn:active { transform: translateY(1px); }
-    .btn-primary { background: linear-gradient(180deg, var(--primary), var(--primary-2)); color: #061126; }
-    .btn-primary:hover { filter: brightness(1.05); }
-    .btn-ghost { background: transparent; border-color: rgba(255,255,255,.18); color: var(--text); border: 1px solid rgba(255,255,255,.18); }
-    .btn-ghost:hover { background: rgba(255,255,255,.06); }
+    .btn-primary {display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border-radius: 1000px; border: 3px solid rgb(90,167,255);background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;font-size: 1rem;text-decoration: none; font-weight: 600;padding: 12px 30px;border: none;border-radius: 999px;box-shadow: 0 4px 10px rgba(59,104,255,0.3); cursor: pointer }
+    .btn-primary:hover { background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;
+    box-shadow: 0 6px 14px rgba(59, 104,255,0.4);transform: translateY(-2px);transition: all 0.5s ease;}
+    .btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border-radius: 1000px; border: 3px solid rgb(90,167,255);background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;font-size: 1rem;text-decoration: none; font-weight: 600;padding: 12px 30px;border: none;border-radius: 999px;box-shadow: 0 4px 10px rgba(59,104,255,0.3); cursor: pointer }
+    .btn-ghost:hover { background: linear-gradient(135deg, rgb(95,142,255), rgb(59,104,255));color: #ffffff;
+    box-shadow: 0 6px 14px rgba(59, 104,255,0.4);transform: translateY(-2px);transition: all 0.5s ease; }
     .card { background: var(--panel); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
     .grid { display: grid; gap: 18px; }
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -178,7 +180,7 @@
     </section>
   </main>
   <footer>
-    <div>© <span id="year"></span> GRIT Conference · Authors: Kera P., Anooshka P., Grace L., Yomna A.</div>
+    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zaineb S, Hunter C, Caleb T</div>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
