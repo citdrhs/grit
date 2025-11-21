@@ -61,15 +61,37 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
+    .CITlogo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      margin-right: 100px;
+}
+
+.nav {
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 12px;
+      height:70px
     }
+
     .nav img.logo, .nav img.CITlogo {
       height: 40px;
     }
+
+    .brand-logo {
+      height: 40px;
+    }
+
+
+    
     .nav-links {
       display: flex;
       gap: 16px;
@@ -200,7 +222,12 @@
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
-        <a href="https://teachers.henrico.k12.va.us/deeprun/cit/" target="_blank">CIT</a>
+      </div>
+          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+          </a>
+        </nav>
+      </div>
       </nav>
     </div>
   </header>
