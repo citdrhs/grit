@@ -13,7 +13,12 @@
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 80% -10%, rgba(90,167,255,.12), transparent),radial-gradient(1200px 600px at -10% 10%, rgba(123,255,192,.08), transparent),var(--bg);line-height:1.6}
     a{color:var(--primary);text-decoration:none}
     a:hover{color:var(--primary-2)}
+    .brand-logo {height: 40px;}
     .container{width:min(1100px,92vw);margin:0 auto}
+    header{position:sticky;top:0;z-index:40;background: rgba(255, 255, 255, 0.7);;backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
+    .CITlogo {width: 55px;height: 55px;object-fit: cover;border-radius: 50%;position: absolute;top: 50%;right: 0;transform: translateY(-50%);margin-right: 100px;}
+    .nav {position: relative;display:flex;align-items:center;justify-content:flex-start;padding:0 12px;height:70px}
+    .brand{font-weight:700;letter-spacing:.3px}
     header{position:sticky;top:0;z-index:40;background:#ffffff(11,16,32,.7);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
     .brand-logo {
@@ -35,8 +40,20 @@
     .section{padding:28px 0}
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:30px}
     .card h2{margin-top:0;color:var(--accent)}
-    .button{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--text);font-weight:600}
-    .button:hover{background:rgba(255,255,255,.06)}
+    .button{display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);}
+    .button:hover{background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);color: white;}
     iframe{border-radius:12px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
     figure{margin:0;text-align:center;color:var(--muted)}
     figure img{border-radius:12px;max-width:100%;height:auto;box-shadow:var(--shadow)}
@@ -44,12 +61,14 @@
     legend{padding:0 12px;color:var(--accent);font-weight:600}
     footer{margin-top:40px;padding:28px 0 44px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);text-align:center}
   </style>
+  
 </head>
 <body>
   <header>
     <div class="container nav">
+      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
       <nav class="nav-links">
-        <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
+       
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
         <a href="./core_values.html">Core Values</a>
@@ -77,12 +96,20 @@
         <div class="dropdown">
           <button>Featured ▾</button>
           <div class="menu">
+            <a href="./2026colleges.html">Colleges from 2026</a>
+            <a href="./2026speakers.html">Speakers from 2026</a>
             <a href="./featuredcolleges.html">Colleges from 2023</a>
             <a href="./featuredspeakers.html">Speakers from 2023</a>
             <a href="./featuredsponsor.html">Sponsors from 2023</a>
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+      </div>
+          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+          </a>
+        </nav>
+      </div>
       </nav>
     </div>
   </header>
@@ -107,6 +134,10 @@
           <a href="https://informationtechnology.henricoschools.us/o/informationtechnology/page/curriculum/" target="_blank" class="button">Learn more about the CIT curriculum</a>
         </div>
         <div class="card">
+          <h2> Student Work </h2>
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQz8wIC4Hy_j7F5JZsG-z0G_CKkwANipMZM-8iQX-c6qWMrL_ceofcexHcOvP5lcw/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div class="card">
           <h2>Community & Experience</h2>
           <p>The CIT extends learning beyond the classroom with <b>Community Innovation Technology projects</b> and <b>Senior Internships</b>. Students collaborate with real clients, apply agile methodologies like Scrum, and gain hands-on experience solving community challenges. The tight-knit CIT community also enjoys events like the Thanksgiving potluck and field trips, balancing hard work with camaraderie.</p>
         </div>
@@ -124,7 +155,7 @@
             <h3>Student Statements</h3>
             <p>“The CIT has given me so many opportunities and taught me invaluable lessons. It's a tight-knit community where everyone connects and supports each other. I'm sad to leave, but CIT will always have a special place in my heart.” — <em>Nischal A., Senior</em></p>
             <p>“The CIT has been an incredible experience, blending learning and personal growth. I've gained countless skills—both technical and soft—becoming more confident, proactive, and better at managing my time and presenting. CIT has also given me amazing opportunities in technology, from planning Nine Weeks Projects to completing my Summer Internship. Overall, my experiences in the CIT have been incredible. The teachers and peers are really supportive, and I've thoroughly enjoyed all the different classes and events. I'm truly happy that I’m part of such an amazing community. 
-” — <em>Shruti D. President of CIT council</em></p>
+” — <em>Shruti D., President of CIT council</em></p>
             <p> </p>
           </fieldset>
           <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="button">Find out more about the CIT!</a>
@@ -142,7 +173,6 @@
   </script>
 </body>
 </html>
-
 
 
 

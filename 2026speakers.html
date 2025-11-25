@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Speakers – GRIT Conference 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./Logo+Option+1..png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<style>
+    :root {
+      --bg: rgb(255, 255, 255);
+      --panel: #ffffff;
+      --panel-2: #0f1630;
+      --text: #000000;
+      --muted: #000000;
+      --primary: #5aa7ff;
+      --primary-2: #faed00;
+      --accent: #000000;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(90,167,255,.12), transparent),
+                  radial-gradient(1200px 600px at -10% 10%, rgba(123,255,192,.08), transparent),
+                  var(--bg);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--primary-2);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+    .brand-logo {
+      height: 40px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+      background: rgba(255,255,255,.06);
+      color: var(--primary);
+      outline: none;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown > button {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      font: inherit;
+      cursor: pointer;
+      padding: 8px 10px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dropdown > button:hover, .dropdown > button:focus {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      outline: none;
+    }
+    .menu {
+      position: absolute;
+      top: calc(100% + 0px);
+      left: 0;
+      min-width: 220px;
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: var(--shadow);
+      display: none;
+    }
+    .menu a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      color: var(--muted);
+    }
+    .menu a:hover {
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+    }
+    .dropdown:focus-within .menu, .dropdown:hover .menu {
+      display: block;
+    }
+    .hero {
+      padding: 30px 0 60px;
+      text-align: center;
+      background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 50px);
+      margin: 0;
+      color: var(--accent);
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 12px auto 0;
+    }
+    .front-image {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px;
+    }
+    .video-container {
+      margin: 5px auto;
+      text-align: center;
+    }
+    iframe {
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+    }
+    .section {
+      padding: 10px 0;
+    }
+    .section h2 {
+      color: var(--accent);
+      text-align: center;
+    }
+    .section p {
+      color: var(--muted);
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+    }
+    .countdown-container {
+      margin: 60px auto;
+      text-align: center;
+      background: var(--panel);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      max-width: 660px;
+    }
+    #countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 1.3rem;
+    }
+    #countdown-timer span {
+      color: var(--accent);
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .countdown-container p {
+      color: var(--muted);
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0px 0 0;
+    }
+    footer {
+      margin-top: 11px;
+      padding: 28px 0 22px;
+      color: var(--muted);
+      border-top: 1px solid rgba(249, 91, 91, 0.08);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
+            <nav class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./citpage.html">About CIT</a>
+                <a href="./core_values.html">Core Values</a>
+                <div class="dropdown">
+                <button>Interviews ▾</button>
+                <div class="menu">
+                    <a href="./Interviews_Guest.html">Guest Interviews from 2023</a>
+                    <a href="./Interviews_Students.html">Student Interviews from 2023</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                <button>Get Involved ▾</button>
+                <div class="menu">
+                    <a href="./volunteer.html">Volunteer</a>
+                    <a href="./donate.html">Donate</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                <button>Media ▾</button>
+                <div class="menu">
+                    <a href="./iPhotos.html">Photos from 2023</a>
+                    <a href="./iVideos.html">Videos from 2023</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                <button>Featured ▾</button>
+                <div class="menu">
+                    <a href="./2026colleges.html">Colleges from 2026</a>
+                    <a href="./2026speakers.html">Speakers from 2026</a>
+                    <a href="./featuredcolleges.html">Colleges from 2023</a>
+                    <a href="./featuredspeakers.html">Speakers from 2023</a>
+                    <a href="./featuredsponsor.html">Sponsors from 2023</a>
+                </div>
+                </div>
+                <a href="./iContactUs.html">Contact</a>
+            </nav>
+            </div>
+    </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>2026 Speakers</h1>
+      <h3>Coming Soon!</h3>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+

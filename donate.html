@@ -28,6 +28,9 @@
                   var(--bg);
       line-height: 1.6;
     }
+    .brand-logo {
+      height: 40px;
+    }
     a { color: var(--primary); text-decoration: none; }
     a:hover { color: var(--primary-2); }
     header {
@@ -37,6 +40,28 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
+    .container { width: min(1100px, 92vw); margin: 0 auto; text-align: center; }
+    .CITlogo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      margin-right: 100px;
+}
+
+.nav {
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 12px;
+      height:70px
+    }
+
     .nav {
       display: flex;
       align-items: center;
@@ -135,17 +160,21 @@
     }
     .donate-box p { color: var(--muted); }
     .donate-button {
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
+      display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);
     }
-    .donate-button:hover { background: var(--primary-2); }
+    .donate-button:hover { background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);color: white; }
     footer {
       margin-top: 60px;
       padding: 28px 0 44px;
@@ -187,16 +216,21 @@
         <div class="dropdown">
           <button>Featured ▾</button>
           <div class="menu">
+            <a href="./2026speakers.html">2026 Speakers</a>
+            <a href="./2026colleges.html">2026 Colleges</a>
             <a href="./featuredcolleges.html">Colleges from 2023</a>
             <a href="./featuredspeakers.html">Speakers from 2023</a>
             <a href="./featuredsponsor.html">Sponsors from 2023</a>
+      
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+        <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+        </a>
       </nav>
     </div>
   </header>
-
 
   <section class="hero">
     <div class="container">

@@ -59,12 +59,27 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
+    .CITlogo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      margin-right: 100px;
+}
+
+.nav {
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 12px;
+      height:70px
     }
+
     .brand-logo {
       height: flex; max-height: 60px; min-width: 50px;
     }
@@ -187,7 +202,6 @@
       max-width: 6600px;
     }
     #countdown-timer {
-      display: flex;
       justify-content: center;
       gap: flex; gap: 2%;
       margin-bottom: 5%;
@@ -204,6 +218,12 @@
       color: var(--accent);
       font-size: 100%;
       font-weight: 700;
+    }
+    #hours, #minutes, #seconds {
+      margin-left: 15px;
+    }
+    .countdown-date {
+      margin-top: 10px;
     }
     .countdown-container p {
       color: var(--muted);
@@ -222,7 +242,6 @@
       margin-top: 11px;
       padding: 28px 0 22px;
       color: var(--muted);
-      border-top: 1px solid rgba(249, 91, 91, 0.08);
       text-align: center;
     }
   </style>
@@ -259,12 +278,20 @@
         <div class="dropdown">
           <button>Featured ▾</button>
           <div class="menu">
+            <a href="./2026colleges.html">Colleges from 2026</a>
+            <a href="./2026speakers.html">Speakers from 2026</a>
             <a href="./featuredcolleges.html">Colleges from 2023</a>
             <a href="./featuredspeakers.html">Speakers from 2023</a>
             <a href="./featuredsponsor.html">Sponsors from 2023</a>
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+      </div>
+          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+          </a>
+        </nav>
+      </div>
       </nav>
     </div>
   </header>
@@ -293,7 +320,9 @@
         <span id="minutes"></span> Minutes
         <span id="seconds"></span> Seconds
       </div>
-      <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+      <div class="countdown-date">
+        <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+      </div>
     </div>
 
     <div class="section-container">
@@ -303,20 +332,21 @@
           Volunteer Form
         </a>
 
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+        <a onclick="alert('Donation form coming soon!')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Donations Form
         </a>
-
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+          
+        <a onclick="alert('Speakers Interest form coming soon!')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Speakers Interest Form
         </a>
 
-        <a id = "button-form" class="btn btn-primary" href="" target = "_blank">
+        <a onclick="alert('Sponsors Interest form coming soon!')" id = "button-form" class="btn btn-primary" href="" target = "_blank">
           Sponsors Interest Form
         </a>
 
-        </div>
-    </div>
+        <div id="myPopup" class="popup-overlay">
+          
+  </div>
 
     
   </section>

@@ -41,7 +41,9 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 10px 30px rgba(0,0,0,0.2);
     }
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .brand-logo {height: 40px;}
+    .CITlogo {width: 55px;height: 55px;object-fit: cover;border-radius: 50%;position: absolute;top: 50%;right: 0;transform: translateY(-50%);margin-right: 100px;}
+    .nav {position: relative;display:flex;align-items:center;justify-content:flex-start;padding:0 12px;height:70px}
     .nav-left { display: flex; align-items: center; gap: 14px; }
     .brand-logo {
     height: flex; max-height: 60px; min-width: 50px;
@@ -71,12 +73,46 @@
     .hero h1 { font-size: clamp(28px, 4.5vw, 44px); line-height: 1.1; margin: 0 0 12px; }
     .hero p { margin: 0 0 20px; color: var(--muted); }
     .cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 18px; border-radius: 999px; border: 1px solid transparent; font-weight: 600; cursor: pointer; transition: transform .06s ease; text-align: center; }
+    .btn { display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);}
     .btn:active { transform: translateY(1px); }
-    .btn-primary { background: linear-gradient(180deg, var(--primary), var(--primary-2)); color: #061126; }
-    .btn-primary:hover { filter: brightness(1.05); }
-    .btn-ghost { background: transparent; border-color: rgba(255,255,255,.18); color: var(--text); border: 1px solid rgba(255,255,255,.18); }
-    .btn-ghost:hover { background: rgba(255,255,255,.06); }
+    .btn-primary { display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3); }
+    .btn-primary:hover {background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);color: white;}
+    .btn-ghost {display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);}
+    .btn-ghost:hover {background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);color: white;}
     .card { background: var(--panel); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
     .grid { display: grid; gap: 18px; }
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -94,11 +130,12 @@
       <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
+        <a href="./core_values.html">Core Values</a>
         <div class="dropdown">
           <button>Interviews ▾</button>
           <div class="menu">
-            <a href="./Interviews_Guest.html">Guest Interviews</a>
-            <a href="./Interviews_Students.html">Student Interviews</a>
+            <a href="./Interviews_Guest.html">Guest Interviews from 2023</a>
+            <a href="./Interviews_Students.html">Student Interviews from 2023</a>
           </div>
         </div>
         <div class="dropdown">
@@ -111,19 +148,27 @@
         <div class="dropdown">
           <button>Media ▾</button>
           <div class="menu">
-            <a href="./iPhotos.html">Photos</a>
-            <a href="./iVideos.html">Videos</a>
+            <a href="./iPhotos.html">Photos from 2023</a>
+            <a href="./iVideos.html">Videos from 2023</a>
           </div>
         </div>
         <div class="dropdown">
           <button>Featured ▾</button>
           <div class="menu">
-            <a href="./featuredcolleges.html">Colleges</a>
-            <a href="./featuredspeakers.html">Speakers</a>
-            <a href="./featuredsponsor.html">Sponsors</a>
+            <a href="./2026colleges.html">Colleges from 2026</a>
+            <a href="./2026speakers.html">Speakers from 2026</a>
+            <a href="./featuredcolleges.html">Colleges from 2023</a>
+            <a href="./featuredspeakers.html">Speakers from 2023</a>
+            <a href="./featuredsponsor.html">Sponsors from 2023</a>
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+      </div>
+          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+          </a>
+        </nav>
+      </div>
       </nav>
     </div>
   </header>

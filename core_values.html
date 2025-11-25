@@ -61,12 +61,27 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 6px 0 #00FFFF(255, 255, 255, 0.06), 0 10px 30px rgba(0,0,0,.2);
     }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
+    .CITlogo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      margin-right: 100px;
+}
+
+.nav {
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 12px;
+      height:70px
     }
+
     .nav img.logo, .nav img.CITlogo {
       height: 40px;
     }
@@ -197,12 +212,20 @@
         <div class="dropdown">
           <button>Featured ▾</button>
           <div class="menu">
+            <a href="./2026colleges.html">Colleges from 2026</a>
+            <a href="./2026speakers.html">Speakers from 2026</a>
             <a href="./featuredcolleges.html">Colleges from 2023</a>
             <a href="./featuredspeakers.html">Speakers from 2023</a>
             <a href="./featuredsponsor.html">Sponsors from 2023</a>
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
+      </div>
+          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+          </a>
+        </nav>
+      </div>
       </nav>
     </div>
   </header>
