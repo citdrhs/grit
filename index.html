@@ -192,25 +192,32 @@
       gap: flex; gap: 2%;
       margin-bottom: 5%;
       color: var(--muted);
-      font-size: 100%;
+      font-size: 300%;
     }
 
-    @media (min-width:768px){
+    @media (max-width:768px){
       #countdown-timer {
-        font-size: 300%;
+        font-size: 100%;
       }
     }
     #countdown-timer span {
       color: var(--accent);
       font-size: 100%;
-      font-weight: 600;
+      font-weight: 700;
     }
     .countdown-container p {
       color: var(--muted);
-      font-size: flex;
       text-align: center;
       margin: flex;
+      font-size: 165%;
     }
+
+    @media (max-width:768px){
+      .countdown-container p {
+        font-size: 75%;
+      }
+    }
+
     footer {
       margin-top: 11px;
       padding: 28px 0 22px;
@@ -281,7 +288,7 @@
     <div class="countdown-container">
       <h2>Countdown to GRIT 2026</h2>
       <div id="countdown-timer" aria-live="polite">
-        <span id="days"></span> Days
+        <span id="days"></span>  Days
         <span id="hours"></span> Hours
         <span id="minutes"></span> Minutes
         <span id="seconds"></span> Seconds
