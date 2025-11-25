@@ -53,15 +53,20 @@
     }
     header {
       position: sticky;
-      top: 0;
-      z-index: 40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      height:5em;
+      width: 100%;
+      font-size: 1em;
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
     .CITlogo {
-      width: 55px;
-      height: 55px;
+      width: 10vh;
+      height: 10vh;
       object-fit: cover;
       border-radius: 50%;
       position: absolute;
@@ -81,7 +86,7 @@
     }
 
     .brand-logo {
-      height: flex; max-height: 60px; min-width: 50px;
+      height: 10vh; max-height: 9vh; min-width: 8vh;
     }
     .nav-links {
       display: flex;
@@ -249,8 +254,8 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
       <nav class="nav-links">
+        <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
         <a href="./core_values.html">Core Values</a>
