@@ -991,3 +991,21 @@ a{
   margin: 0;
 }
 
+/* VENDOR HALL PAGE STYLING */
+/* By Aditi Inamdar */
+.grit-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.grit-logo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.org-list h3 {
+  
+}
