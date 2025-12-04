@@ -72,32 +72,20 @@
 }
 
 .nav {
-      position: fixed;
-      /*display:flex;*/
+      position: relative;
+      display:flex;
       align-items:center;
       justify-content:flex-start;
       padding:0 12px;
-      height:1100px;
-      width: 130px;
-      Top: 0;
-      Left: 0;
-      background-color: #ffffff;
-      overflow-x: hidden;
-      transition: 0.3s;
-      padding-top: 60px;
+      height:70px
     }
 
     .brand-logo {
       height: 40px;
     }
     .nav-links {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 12px;
-      color: #ffffff;
-      transition: 0.2s;
-      display: block;
-      gap: 20px;
+      display: flex;
+      gap: 16px;
       flex-wrap: wrap;
     }
     .nav-links a {
@@ -111,31 +99,6 @@
       color: var(--primary);
       outline: none;
     }
-    /* Close button */
-    .sidenav .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 30px;
-        color: black;
-        cursor: pointer;
-    }
-
-    /* Open button */
-    .openbtn {
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #ffffff;
-        color: black;
-        padding: 10px 15px;
-        border: none;
-    }
-
-    .openbtn:hover {
-        background-color: var(--primary);
-    }
-
-
     .dropdown {
       position: relative;
     }
@@ -275,17 +238,12 @@
       text-align: center;
     }
   </style>
-  </head>
-  
- 
-
-<!-- Side navigation -->
+</head>
 <body>
-   <!-- Open button -->
-<button class="openbtn" onclick="openNav()">☰ Open Menu</button>
-    <div id="mySidenav" class="sidenav">
-      <span class="closebtn" onclick="closeNav()">&times;</span>  
+  <header>
+    <div class="container nav">
       <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
+      <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
         <a href="./core_values.html">Core Values</a>
@@ -329,18 +287,7 @@
       </div>
       </nav>
     </div>
-    <script>
-      // Function to open the nav
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-      }
-  
-      // Function to close the nav
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-      }
-  </script>
-  
+  </header>
   <section class="hero">
     <div class="container">
       <h1>The GRIT Conference</h1>
@@ -394,22 +341,12 @@
           
   </div>
 
-
     
   </section>
   
 
     
   <script>
-     // Function to open the nav
-     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    // Function to close the nav
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
     document.getElementById('year') ? document.getElementById('year').textContent = new Date().getFullYear() : null;
     function updateCountdown() {
       const now = new Date();
