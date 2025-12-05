@@ -117,164 +117,6 @@
 
     }
 
-    .nav-links {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
-      flex: 1;
-      justify-content: center;
-    }
-    .nav-links a {
-      color: var(--muted);
-      font-weight: 500;
-      padding: 8px 10px;
-      border-radius: 10px;
-    }
-    .nav-links a:hover, .nav-links a:focus {
-      background: rgba(255,255,255,.06);
-      color: var(--primary);
-      outline: none;
-    }
-    .dropdown {
-      position: relative; 
-    }
-    .dropdown > button {
-      background: transparent;
-      border: 0;
-      color: var(--muted);
-      font: inherit;
-      cursor: pointer;
-      padding: 8px 10px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .dropdown > button:hover, .dropdown > button:focus {
-      background: rgba(255, 255, 255, 0.06);
-      color: var(--text);
-      outline: none;
-    }
-    .menu {
-      position: absolute;
-      top: calc(100%);
-      left: 0;
-      min-width: 220px;
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 12px;
-      padding: 8px;
-      box-shadow: var(--shadow);
-      display: none;
-    }
-    .menu a {
-      display: block;
-      padding: 10px 12px;
-      border-radius: 8px;
-      color: var(--muted);
-    }
-    .menu a:hover {
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-    }
-    .dropdown:focus-within .menu, .dropdown:hover .menu {
-      display: block;
-    }
-    .hero {
-      padding: 30px 0 60px;
-      text-align: center;
-      background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .hero h1 {
-      font-size: clamp(30px, 5vw, 50px);
-      margin: 0;
-      color: var(--accent);
-    }
-    .hero p {
-      color: var(--muted);
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 12px auto 0;
-    }
-    .front-image {
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .front-image img {
-      height: auto;
-      width: 85%;
-      margin-top: 3%;
-      border-radius: 15px;
-    }
-    .video-container {
-      margin: 5px auto;
-      text-align: center;
-    }
-    iframe {
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-    }
-    .section {
-      padding: 10px 0;
-    }
-    .section h2 {
-      color: var(--accent);
-      text-align: center;
-    }
-    .section p {
-      color: var(--muted);
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-    .countdown-container {
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      background: var(--panel);
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-      padding: flex;
-    }
-    #countdown-timer {
-      justify-content: center;
-      gap: flex; gap: 2%;
-      margin-bottom: 2%;
-      color: var(--muted);
-      font-size: 250%;
-    }
-   
-    #countdown-timer span {
-      color: var(--accent);
-      font-size: 100%;
-      font-weight: 700;
-    }
-    #hours, #minutes, #seconds {
-      margin-left: 15px;
-    }
-    .countdown-date {
-      margin: 15px;
-    }
-    .countdown-container p {
-      color: var(--muted);
-      text-align: center;
-      margin: flex;
-      font-size: 165%;
-    }
-
-  
-    footer {
-      margin-top: 11px;
-      padding: 28px 0 22px;
-      color: var(--muted);
-      text-align: center;
-    }
-
     @media (max-width:768px){
       .nav {
         position: relative;
@@ -290,19 +132,13 @@
         margin-left: auto;
       }
       .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.97);
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 16px 10px;
-        gap: 6px;
-        display: none;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        z-index: 50;
-      }
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+    }
       .nav.nav-open .nav-links {
         display: flex;
       }
@@ -355,9 +191,6 @@
   <header>
     <div class="container nav">
       <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
-    </button>
       <nav class="nav-links">
        
         <a href="./index.html">Home</a>
