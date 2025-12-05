@@ -55,23 +55,76 @@
       position: sticky;
       top: 0;
       z-index: 40;
+      width: 100%;
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(10px);
       box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
     }
-    .nav {
+    .CITlogo {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-right: 100px;
+}
+
+.nav {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 16px;
+      padding:8px 12px;
+      height:auto;
+    }
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    .nav-toggle:focus-visible {
+      outline: 2px solid var(--primary);
+      border-radius: 4px;
+    }
+
+    .brand-logo {
+      height: 40px; max-height: 40px; width: auto;
+    }
+
+    .CITpicture {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      margin-left: 16px;
     }
-    .brand-logo {
+    
+    .CITlogo {
+      position: static;
+      margin: 0;
+      width: 40px;
       height: 40px;
+      object-fit: contain;
+      border-radius: 50%;
+
     }
+
     .nav-links {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
     }
     .nav-links a {
       color: var(--muted);
@@ -85,7 +138,7 @@
       outline: none;
     }
     .dropdown {
-      position: relative;
+      position: relative; 
     }
     .dropdown > button {
       background: transparent;
@@ -106,7 +159,7 @@
     }
     .menu {
       position: absolute;
-      top: calc(100% + 0px);
+      top: calc(100%);
       left: 0;
       min-width: 220px;
       background: var(--panel);
@@ -147,9 +200,15 @@
       margin: 12px auto 0;
     }
     .front-image {
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .front-image img {
+      height: auto;
+      width: 85%;
+      margin-top: 3%;
+      border-radius: 15px;
     }
     .video-container {
       margin: 5px auto;
@@ -171,41 +230,49 @@
       color: var(--muted);
       max-width: 800px;
       margin: auto;
-      text-align: justify;
+      text-align: center;
     }
     .countdown-container {
-      margin: 60px auto;
+      width: 90%;
+      margin: auto;
       text-align: center;
       background: var(--panel);
-      border-radius: 12px;
+      border-radius: var(--radius);
       border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
-      padding: 20px;
-      max-width: 660px;
+      padding: flex;
     }
     #countdown-timer {
-      display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: flex; gap: 2%;
+      margin-bottom: 2%;
       color: var(--muted);
-      font-size: 1.3rem;
+      font-size: 250%;
     }
+   
     #countdown-timer span {
       color: var(--accent);
-      font-size: 2.5rem;
-      font-weight: 600;
+      font-size: 100%;
+      font-weight: 700;
+    }
+    #hours, #minutes, #seconds {
+      margin-left: 15px;
+    }
+    .countdown-date {
+      margin: 15px;
     }
     .countdown-container p {
       color: var(--muted);
-      font-size: 1.3rem;
       text-align: center;
-      margin: 0px 0 0;
+      margin: flex;
+      font-size: 165%;
     }
+
+  
     footer {
       margin-top: 11px;
       padding: 28px 0 22px;
       color: var(--muted);
-      border-top: 1px solid rgba(249, 91, 91, 0.08);
       text-align: center;
     }
 
