@@ -178,12 +178,89 @@
       border-top: 1px solid rgba(255,255,255,.08);
       text-align: center;
     }
+
+    @media (max-width:768px){
+      .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 6px 10px;
+      }
+      .nav-toggle {
+        order: 3;
+        display: block;
+        margin-left: auto;
+      }
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.97);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px 10px;
+        gap: 6px;
+        display: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        z-index: 50;
+      }
+      .nav.nav-open .nav-links {
+        display: flex;
+      }
+      .nav-links a, .dropdown > button {
+        width: 100%;
+        text-align: left;
+        padding: 6px 0;
+      }
+      .brand-logo {
+        order: 1;
+      }
+      .CITpicture {
+        order: 2;
+        display: flex;
+        margin-left: 8px
+      }
+
+      .dropdown {
+        width: 100%;
+      }
+
+      .dropdown > button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .dropdown .menu {
+        position: static;
+        min-width: 0;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        padding: 0 0 4px 16px;
+        border-radius: 0;
+      }
+      .dropdown .menu a {
+        padding: 4px 0;
+      }
+      .countdown-container p {
+        font-size: 75%;
+      }
+      #countdown-timer {
+        font-size: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
       <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+    </button>
       <nav class="nav-links">
         <a href="./index.html">Home</a>
         <a href="./citpage.html">About CIT</a>
@@ -225,9 +302,6 @@
           <a href="https://informationtechnology.henricoschools.us/" target="_blank">
           <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
           </a>
-        </nav>
-      </div>
-      </nav>
     </div>
   </header>
 
@@ -269,15 +343,6 @@
           </div>
     
         </div>
-    
-      <!--
-      <ul>
-        <li><strong>Respect:</strong> Always respect everyone's person, property, and time.</li>
-        <li><strong>Integrity:</strong> Conduct yourself in an ethical manner, obeying policies and rules at all times, setting the standard for exemplary student behavior.</li>
-        <li><strong>Teamwork:</strong> Working collaboratively in high-functioning teams to accomplish common goals.</li>
-        <li><strong>Excellence:</strong> Setting high standards in all we do and striving to achieve them.</li>
-      </ul>
-      -->
     
   </main>
 
