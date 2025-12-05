@@ -19,7 +19,7 @@
     img{max-width:100%;height:auto;display:block}
     .container{width:min(1200px,92vw);margin:0 auto}
     .brand-logo {height: 40px;}
-    header{position:sticky;top:0;z-index:40;background:rgba(11,16,32,.7);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
+    header{position:sticky;top:0;z-index:40;background:rgba(255, 255, 255, 0.7);;backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
     .CITlogo {width: 55px;height: 55px;object-fit: cover;border-radius: 50%;position: absolute;top: 50%;right: 0;transform: translateY(-50%);margin-right: 100px;}
     .nav {position: relative;display:flex;align-items:center;justify-content:flex-start;padding:0 12px;height:70px}
     .brand{font-weight:700;letter-spacing:.3px}
@@ -55,6 +55,7 @@
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
+  text-align: center;
   padding: 12px 30px;
   border: none;
   border-radius: 999px; /* pill shape */
@@ -65,8 +66,18 @@
   transform: translateY(-2px);color: white;}
     footer{margin-top:40px;padding:28px 0 44px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);text-align:center}
     .note{color:var(--muted);text-align:center;margin-top:6px}
+    .videos-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(350px, max-content));gap: 30px; padding: 20px 0;justify-content: center;}
+.video-card {background: #ffffff;border-radius: 12px;box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 20px;transition: transform 0.2s ease, box-shadow 0.2s ease;}
+.video-card:hover {transform: translateY(-5px);box-shadow: 0 8px 25px rgba(0,0,0,0.15);}
+.video-head {display: flex;align-items: center;justify-content: space-between;margin-bottom: 15px;}
+.video-head .title {font-size: 1.1rem;font-weight: 600;text-align: left;}
+.video-head .btn {background: #0078ff;color: white;padding: 8px 16px;text-decoration: none;font-size: 0.9rem;font-weight: 500;transition: background 0.2s ease;border-radius: 999px;}
+.video-head .btn:hover {background: #005fcc;}
+.video-embed iframe {width: 100%;height: 220px;border: none;border-radius: 10px;}
+
   </style>
 </head>
+
 <body>
   <header>
     <div class="container nav">
@@ -104,7 +115,6 @@
             <a href="./featuredcolleges.html">Colleges from 2023</a>
             <a href="./featuredspeakers.html">Speakers from 2023</a>
             <a href="./featuredsponsor.html">Sponsors from 2023</a>
-            <a href="./vendor_hall_org.html">2023 Vendor Hall </a>
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
@@ -120,37 +130,68 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Guest Interviews 2023</h1>
-      <p>Conversations with keynote speakers, alumni, and community leaders from the 2023 conference.</p>
+      <h1 style="text-align:center;">Guest Interviews 2023</h1>
+      <p style="text-align:center;">Conversations with keynote speakers, alumni, and community leaders from the 2023 conference.</p>
     </div>
   </section>
 
   <main>
-    <section class="section">
-      <div class="container videos">
-        <div class="video">
-          <div class="video-head"><div class="title">Vida Williams – Keynote Speaker</div><a class="btn" href="https://www.youtube.com/watch?v=4kG02kHGfus" target="_blank">Watch on YouTube</a></div>
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/4kG02kHGfus?si=8VjQbZXi4xrHHpP7" title="Vida Williams – Keynote"></iframe></div>
-        </div>
-        <div class="video">
-          <div class="video-head"><div class="title">Victor Mukora – CIT Alumni</div><a class="btn" href="https://www.youtube.com/watch?v=5n5pMm6xMVs" target="_blank">Watch on YouTube</a></div>
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/5n5pMm6xMVs?si=hrRY0s4GrcVWJeOw" title="Victor Mukora – Alumni"></iframe></div>
-        </div>
-        <div class="video">
-          <div class="video-head"><div class="title">Todd Dube – Speaker</div><a class="btn" href="https://www.youtube.com/watch?v=76MwhslSwfM" target="_blank">Watch on YouTube</a></div>
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/76MwhslSwfM?si=wbG9YBvRWa6HU8Xh" title="Todd Dube – Speaker"></iframe></div>
-        </div>
-        <div class="video">
-          <div class="video-head"><div class="title">LaDawna McEnhimer – CIT Alumni</div><a class="btn" href="https://www.youtube.com/watch?v=vdtiuguYbYE" target="_blank">Watch on YouTube</a></div>
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/vdtiuguYbYE?si=UZ2gju9ojI4tZAw9" title="LaDawna McEnhimer – Alumni"></iframe></div>
-        </div>
-        <div class="video">
-          <div class="video-head"><div class="title">Caroline Bell – Speaker</div><a class="btn" href="https://www.youtube.com/watch?v=6Vq8ZYwwE7o" target="_blank">Watch on YouTube</a></div>
-          <div class="video-embed"><iframe src="https://www.youtube.com/embed/6Vq8ZYwwE7o?si=zO1YQosgWrI0ZV90" title="Caroline Bell – Speaker"></iframe></div>
-        </div>
-      </div>
+    <section class="section videos-section">
+    <div class="container videos-grid">
+    
+    <div class="video-card">
+    <div class="video-head">
+    <div class="title">Vida Williams – Keynote Speaker</div>
+    <a class="btn" href="https://www.youtube.com/watch?v=4kG02kHGfus" target="_blank">Watch on YouTube</a>
+    </div>
+    <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/4kG02kHGfus?si=8VjQbZXi4xrHHpP7" title="Vida Williams – Keynote" allowfullscreen></iframe>
+    </div>
+    </div>
+    
+    <div class="video-card">
+    <div class="video-head">
+    <div class="title">Victor Mukora – CIT Alumni</div>
+    <a class="btn" href="https://www.youtube.com/watch?v=5n5pMm6xMVs" target="_blank">Watch on YouTube</a>
+    </div>
+    <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/5n5pMm6xMVs?si=hrRY0s4GrcVWJeOw" title="Victor Mukora – Alumni" allowfullscreen></iframe>
+    </div>
+    </div>
+    
+    <div class="video-card">
+    <div class="video-head">
+    <div class="title">Todd Dube – Speaker</div>
+    <a class="btn" href="https://www.youtube.com/watch?v=76MwhslSwfM" target="_blank">Watch on YouTube</a>
+    </div>
+    <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/76MwhslSwfM?si=wbG9YBvRWa6HU8Xh" title="Todd Dube – Speaker" allowfullscreen></iframe>
+    </div>
+    </div>
+    
+    <div class="video-card">
+    <div class="video-head">
+    <div class="title">LaDawna McEnhimer – CIT Alumni</div>
+    <a class="btn" href="https://www.youtube.com/watch?v=vdtiuguYbYE" target="_blank">Watch on YouTube</a>
+    </div>
+    <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/vdtiuguYbYE?si=UZ2gju9ojI4tZAw9" title="LaDawna McEnhimer – Alumni" allowfullscreen></iframe>
+    </div>
+    </div>
+    
+    <div class="video-card">
+    <div class="video-head">
+    <div class="title">Caroline Bell – Speaker</div>
+    <a class="btn" href="https://www.youtube.com/watch?v=6Vq8ZYwwE7o" target="_blank">Watch on YouTube</a>
+    </div>
+    <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/6Vq8ZYwwE7o?si=zO1YQosgWrI0ZV90" title="Caroline Bell – Speaker" allowfullscreen></iframe>
+    </div>
+    </div>
+    
+    </div>
     </section>
-  </main>
+    </main>    
 
   <footer>
     <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
