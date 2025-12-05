@@ -12,35 +12,69 @@
     html,body{height:100%}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 80% -10%, rgba(90,167,255,.12), transparent),radial-gradient(1200px 600px at -10% 10%, rgba(123,255,192,.08), transparent),var(--bg);line-height:1.6}
     a{color:var(--primary);text-decoration:none}
+
     a:hover{color:var(--primary-2)}
+
     .brand-logo {height: 40px;}
+
     .container{width:min(1100px,92vw);margin:0 auto}
+
     header{position:sticky;top:0;z-index:40;background: rgba(255, 255, 255, 0.7);;backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
-    .CITlogo {width: 55px;height: 55px;object-fit: cover;border-radius: 50%;position: absolute;top: 50%;right: 0;transform: translateY(-50%);margin-right: 100px;}
-    .nav {position: relative;display:flex;align-items:center;justify-content:flex-start;padding:0 12px;height:70px}
+
+    .CITlogo {width: 40px;height: 40px;object-fit: contain;border-radius: 50%;position: static;display:block;}
+
+    .nav {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 12px;height:auto}
+
     .brand{font-weight:700;letter-spacing:.3px}
+
     header{position:sticky;top:0;z-index:40;background:#ffffff(11,16,32,.7);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 10px 30px rgba(0,0,0,.2)}
+
     .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+
     .brand-logo {
-      height: flex; max-height: 60px; min-width: 50px;
+      height: 40px; max-height: 40px; width: auto;
     }
-    .nav-links{display:flex;gap:16px;flex-wrap:wrap}
+    .nav-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center;flex:1;justify-content:center}
+
     .nav-links a{color:var(--muted);font-weight:500;padding:8px 10px;border-radius:10px}
+
     .nav-links a:hover,.nav-links a:focus{background:rgba(255,255,255,.06);color:var(--primary);outline:none}
-    .dropdown{position:relative; margin-bottom: auto;}
+
+    .nav-toggle{display:none;background:transparent;border:none;font-size:1.8rem;cursor:pointer;padding:4px 8px;}
+
+    .nav-toggle:focus-visible{
+      outline: 2px solid var(--primary);
+      border-radius: 4px;
+    }
+
+    .dropdown{position:relative}
+
     .dropdown>button{background:transparent;border:0;color:var(--muted);font:inherit;cursor:pointer;padding:8px 10px;border-radius:10px;display:inline-flex;align-items:center;gap:6px}
+
     .dropdown>button:hover,.dropdown>button:focus{background:rgba(255,255,255,.06);color:var(--text);outline:none}
+
     .menu{position:absolute;top:calc(100%);left:0;min-width:220px;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;box-shadow:var(--shadow);display:none}
+
     .menu a{display:block;padding:10px 12px;border-radius:8px;color:var(--muted)}
+
     .menu a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+
     .dropdown:focus-within .menu,.dropdown:hover .menu{display:block}
+
     .hero{padding:48px 0 20px;border-bottom:1px solid rgba(255,255,255,.08);background:radial-gradient(800px 300px at 20% 0%, rgba(90,167,255,.10), transparent)}
+
     .hero h1{font-size:clamp(28px,4.5vw,44px);line-height:1.1;margin:0 0 10px}
+
     .hero p{margin:0;color:var(--muted)}
+
     .section{padding:28px 0}
+
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:30px}
+
     .card h2{margin-top:0;color:var(--accent)}
+
     .button{display: inline-block;
+
   background: linear-gradient(135deg, #5f8eff, #3b68ff);
   color: white;
   font-weight: 600;
@@ -60,6 +94,102 @@
     fieldset{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;margin-top:20px;background:var(--panel-2)}
     legend{padding:0 12px;color:var(--accent);font-weight:600}
     footer{margin-top:40px;padding:28px 0 44px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);text-align:center}
+  
+    .CITpicture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      margin-left: 16px;
+    }
+    
+    .CITlogo {
+      position: static;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 50%;
+
+    }
+
+    @media (max-width:768px){
+      .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 6px 10px;
+      }
+      .nav-toggle {
+        order: 3;
+        display: block;
+        margin-left: auto;
+      }
+      .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.97);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 16px 10px;
+      gap: 6px;
+      display: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      z-index: 50;
+    }
+      .nav.nav-open .nav-links {
+        display: flex;
+      }
+      .nav-links a, .dropdown > button {
+        width: 100%;
+        text-align: left;
+        padding: 6px 0;
+      }
+      .brand-logo {
+        order: 1;
+      }
+      .CITpicture {
+        order: 2;
+        display: flex;
+        margin-left: 8px
+      }
+
+      .dropdown {
+        width: 100%;
+      }
+
+      .dropdown > button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .dropdown .menu {
+        position: static;
+        min-width: 0;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        padding: 0 0 4px 16px;
+        border-radius: 0;
+      }
+      .dropdown .menu a {
+        padding: 4px 0;
+      }
+      .countdown-container p {
+        font-size: 75%;
+      }
+      #countdown-timer {
+        font-size: 100%;
+      }
+    }
   </style>
   
 </head>
@@ -67,6 +197,9 @@
   <header>
     <div class="container nav">
       <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+    </button>
       <nav class="nav-links">
        
         <a href="./index.html">Home</a>
@@ -105,13 +238,10 @@
           </div>
         </div>
         <a href="./iContactUs.html">Contact</a>
-      </div>
-          <a href="https://informationtechnology.henricoschools.us/" target="_blank">
-          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
-          </a>
-        </nav>
-      </div>
       </nav>
+      <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="CITpicture">
+          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
+        </a>
     </div>
   </header>
   
@@ -163,6 +293,15 @@
   </footer>
 
   <script>
+    const nav = document.querySelector('.nav');
+    const navToggle = document.querySelector('.nav-toggle');
+    if (nav && navToggle) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
