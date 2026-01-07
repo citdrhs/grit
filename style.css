@@ -1,4 +1,5 @@
-du/* ---------------GENERAL STYLING--------------- */
+
+/* ---------------GENERAL STYLING--------------- */
 html, body {
   height: 100%;
   width: 100%;
@@ -21,6 +22,27 @@ ul.nav {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* GRADIENT */
+/* By Tanushree Sarda */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(90,167,255,.12), transparent),
+              radial-gradient(1200px 600px at -10% 10%, rgba(123,255,192,.08), transparent),
+              var(--bg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero {
+  padding: 30px 0 60px;
+  text-align: center;
+  background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
+  /*border-bottom: 1px solid rgba(255,255,255,.08);*/
+  background-repeat: no-repeat;
+}
+
 /* make all of the items in the nav bar align left */
 ul.nav li {
   float: left;
@@ -40,9 +62,9 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-/* when you hover over the nav bar and dropdown, it will change colors */
+/* when you hover over the nav bar and dropdown, it will change colors (DOESNT WORK)*/ 
 li a:hover, .dropdown:hover .dropbtn {
-  color: #545454;
+  color: var(--primary);
 }
 
 /* dropdown in nav bar */
@@ -127,12 +149,12 @@ legend{
   margin-right: auto;
 }
 
-/* Setting background color of all elements in legend */
+/* Setting background color of all elements in legend 
 legend * {
   background-color: #98DFF14D;
 }
 
-/* style the fieldset and its border */
+/* style the fieldset and its border 
 fieldset {
   background-color: white;
   border-radius: 15px;
@@ -143,7 +165,7 @@ fieldset {
 /* styling for footer */
 .footer{
   display: block;
-  background-color:#98DFF14D;
+  background-color:#ffffff;
   text-align: center;
   width: 100%;
   font-size: 14px;
@@ -331,11 +353,13 @@ section, .desc {
 
 /* formatting header */
 header, .header{
-  background-color:#0063b1;
-  background-size: cover;
-  background-image: url("./glenallennew3.jpg");
-  background-repeat: no-repeat;
-  text-align:center;  
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);  
 }
 
 /* styling for title of tracks and sessions table and agenda table*/
@@ -549,22 +573,6 @@ iframe {
   text-align: center;
 }
 
-/* styling the container for the student statements and deep run picture */
-/*
-#student_statements {
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-}*/
-
-/* setting position of the deep run picture */
-/*
-#statement_pic {
-  float: left;
-  width:50%;
-}
-*/
-
 /* styling caption for deep run high school image */
 figcaption {
   text-align: center;
@@ -576,20 +584,6 @@ figcaption {
 /* if the page is larger than 1000px, hallway pic and student statements will be side by side using flexbox */
 @media (min-width: 1000px) {
     
-  
-  /* position deep run image in the About the CIT page */
-  /*
-  #drpic{
-    width: 100%;
-  }*/
-  
-  /* position student statements */
-  /*
-  #statements {
-    float: right;*/
-    /*width: 40%;
-  }
-  */
   
   .flex-container-statements {
     display: flex;
