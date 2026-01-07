@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +7,68 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML template.</p>
-    <script src="scripts.js"></script>
+  <div id="site-header"></div>
+  <section class="hero">
+    <div class="container">
+      <h1>The GRIT Conference</h1>
+      <p>Growing Resources in Information Technology — The Center for Information Technology at Deep Run High School hosts the conference for innovation and learning.</p>
+    </div>
+    <div class="front-image">
+      <img src="front-image.jpg" alt="GRIT Conference Photo">
+    </div>
+  </section>
+  <section class="section container">
+    <h2>About GRIT</h2>
+    <p>The <b>Growing Resources of Information Technology Conference (GRIT)</b> was created to provide students in Deep Run’s Center for Information Technology with a professional conference experience. With the help of speakers, vendors, alumni, and college representatives, students gain a greater understanding of opportunities in IT and Computer Science. The event offers breakout sessions in Education, Career, and Technology, providing insight into both academic and professional growth within the field.</p>
+    <p>In 2023, the CIT proudly hosted <b>Dr. Vint Cerf</b>—the Father of the Internet—as keynote speaker for the conference, giving students the opportunity to hear from one of the world’s most influential innovators in technology.</p>
+  </section>
+  <section class="section container">
+    </div>
+
+    <div class="countdown-container">
+      <h2>Countdown to GRIT 2026</h2>
+      <div id="countdown-timer" aria-live="polite">
+        <span id="days"></span>  Days
+        <span id="hours"></span> Hours
+        <span id="minutes"></span> Minutes
+        <span id="seconds"></span> Seconds
+      </div>
+      <div class="countdown-date">
+        <p>Until the next GRIT Conference on March 9, 2026, 9:00 AM EST</p>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <h2> Looking to Help Out? </h2>
+      <div class="btn-group">
+        <a id = "button-form" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfvj5J-KLKetWsRzE1RnHEGv_yF0rgDmkhQJTT4w5kP3NB7uw/viewform" target="_blank">
+          Volunteer Sign Up
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="https://osp.osmsinc.com/HenricoVA/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=EH160-VAR203" target = "_blank">
+          Make a Donation 
+        </a>
+          
+        <a id = "button-form" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc8s3K_akpLhLoyFHGI0goKRsfTd5Kteg17fxME2Wg-VjhyUg/viewform" target = "_blank">
+          College Sign Up 
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfyOhEFxiJ1R_cVrwOTnra2rTTviClS8il7467-cWImiLhsyQ/viewform" target = "_blank">
+          Sponsor Sign Up
+        </a>
+
+        <a id = "button-form" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScJu4AEKdznr2OdaobSYFjhjj0_edvFhEYnK-9fW_iszR9Buw/viewform?usp=sharing&ouid=100812822958270873127" target = "_blank">
+          Vendor Hall Organization Sign Up
+        </a>
+
+        <div id="myPopup" class="popup-overlay">
+          
+  </div>
+
+    
+  </section>
+  <div id="site-footer"></div>
+  <script src="scripts.js"></script>
 </body>
 </html>
 
@@ -28,55 +84,6 @@
 
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
-    </button>
-      <nav class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./citpage.html">About CIT</a>
-        <a href="./core_values.html">Core Values</a>
-        <div class="dropdown">
-          <button>Interviews ▾</button>
-          <div class="menu">
-            <a href="./Interviews_Guest.html">Guest Interviews from 2023</a>
-            <a href="./Interviews_Students.html">Student Interviews from 2023</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Get Involved ▾</button>
-          <div class="menu">
-            <a href="./volunteer.html">Volunteer</a>
-            <a href="./donate.html">Donate</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Media ▾</button>
-          <div class="menu">
-            <a href="./iPhotos.html">Photos from 2023</a>
-            <a href="./iVideos.html">Videos from 2023</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Featured ▾</button>
-          <div class="menu">
-            <a href="./2026colleges.html">Colleges from 2026</a>
-            <a href="./2026speakers.html">Speakers from 2026</a>
-            <a href="./featuredcolleges.html">Colleges from 2023</a>
-            <a href="./featuredspeakers.html">Speakers from 2023</a>
-            <a href="./featuredsponsor.html">Sponsors from 2023</a>
-            <a href="./vendor_hall_orgs.html">2023 Vendor Hall</a>
-          </div>
-        </div>
-        <a href="./iContactUs.html">Contact</a>
-      </nav>
-        <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="CITpicture">
-          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
-          </a>
-    </div>
-  </header>
   <section class="hero">
     <div class="container">
       <h1>The GRIT Conference</h1>
@@ -521,9 +528,6 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   </script>
-  <footer>
-    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
-  </footer>
 </body>
 </html>
 
