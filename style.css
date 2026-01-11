@@ -10,7 +10,7 @@ html, body {
   text-align: center;
 }
 
-/* Navigation bar format */
+/* ---------------Navigation Bar Format---------------*/
 ul.nav {
   list-style-type: none;
   margin: 0;
@@ -22,8 +22,28 @@ ul.nav {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* GRADIENT */
-/* By Tanushree Sarda */
+/*Makes top links turn blue when hovered over*/
+.nav-links a:hover, .nav-links a:focus {
+  background: rgba(255,255,255,.06);
+  color: var(--primary);
+  outline: none;
+}
+
+/*Makes dropdown headers turn blue when hovered on*/
+.dropdown > button:hover, .dropdown > button:focus { 
+  background: rgba(255,255,255,0.06); 
+  color: var(--primary); 
+  outline: none; 
+}
+
+/*Makes dropdown menu ITEMS turn blue when hovered on*/
+.menu a:hover{
+  background:rgba(255,255,255,.06);
+  color:var(--primary)
+}
+
+
+/*---------------Gradient---------------*/
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -35,25 +55,26 @@ body {
   background-attachment: fixed;
 }
 
+/*Changes the padding before title on HOME PAGE*/
 .hero {
   padding: 30px 0 60px;
   text-align: center;
   background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
-  /*border-bottom: 1px solid rgba(255,255,255,.08);*/
   background-repeat: no-repeat;
 }
 
-/* make all of the items in the nav bar align left */
+/* make all of the items in the nav bar align left 
 ul.nav li {
   float: left;
 }
 
-/* spacing for nav bar */
+/* spacing for nav bar 
 li.nav_item, li.dropdown {
    padding-top: 10px;
 }
+*/
 
-/* styling for each item in nav bar */
+/* styling for each item in nav bar (DOESNT WORK) 
 li a, .dropbtn {
   display: inline-block;
   color: black;
@@ -61,6 +82,7 @@ li a, .dropbtn {
   padding: 14px 16px;
   text-decoration: none;
 }
+*/
 
 /* when you hover over the nav bar and dropdown, it will change colors (DOESNT WORK)*/ 
 li a:hover, .dropdown:hover .dropbtn {
@@ -188,24 +210,16 @@ fieldset {
 /* ---------------HOME PAGE STYLING--------------- */
 /* Kera Parham: Home page */
 
-  
-
-
-  
-/* animation typing https://css-tricks.com/snippets/css/typewriter-effect/ */ 
-@media (min-width: 1000px){
-
 #title{
   font-size: 48px; 
   font-family: 'IBM Plex Mono', monospace;
 }
+
 .container{
   display: inline-block;
-  
-
 }
+
 .typewriter h1 {
-  
   font-family: monospace;
   overflow: hidden; 
   border-right: .15em solid white; 
@@ -227,7 +241,7 @@ fieldset {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
-}
+
 
 @media (max-width: 1000px){
   #title{
