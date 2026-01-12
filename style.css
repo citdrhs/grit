@@ -1,5 +1,19 @@
 
 /* ---------------GENERAL STYLING--------------- */
+
+:root {
+  --bg: rgb(255, 255, 255);
+  --panel: #ffffff;
+  --panel-2: #0f1630;
+  --text: #000000;
+  --muted: #000000;
+  --primary: #5aa7ff;
+  --primary-2: #faed00;
+  --accent: #000000;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius: 16px;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -127,6 +141,7 @@ li.dropdown {
 .logo {
   width:35px;
   height:40px;
+  position: absolute;
 }
 
 /* set size and position of cit logo in nav bar */
@@ -149,7 +164,7 @@ li.dropdown {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #98DFF14D; 
+  background: #a7c7ec; 
 }
 
 /* Handle on hover */
