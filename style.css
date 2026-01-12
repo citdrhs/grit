@@ -14,6 +14,10 @@
   --radius: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -23,6 +27,24 @@ html, body {
   padding: 0px;
   text-align: center;
 }
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-2);
+}
+
+/*Image sizing*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 /* ---------------Navigation Bar Format---------------*/
 ul.nav {
@@ -714,7 +736,7 @@ figcaption {
   position: absolute;
   top: 1000 px;
   padding-top: 20px;
- background-color: #CAEEF8;
+ background-color: white;
   
 }
 
@@ -753,7 +775,7 @@ figcaption {
 
 /* make the title white */
 .title {
-  color: white;
+  color: black;
 }
 
 /* add some spacing and set the font for the header */
