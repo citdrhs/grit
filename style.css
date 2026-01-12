@@ -44,6 +44,21 @@ img {
   display: block;
 }
 
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.2);
+}
+
 
 
 /* ---------------Navigation Bar Format---------------*/
@@ -93,36 +108,10 @@ body {
 
 /*Changes the padding before title on HOME PAGE*/
 .hero {
-  padding: 30px 0 60px;
+  padding: 30px 0 0px;
   text-align: center;
   background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent);
   background-repeat: no-repeat;
-}
-
-/* make all of the items in the nav bar align left 
-ul.nav li {
-  float: left;
-}
-
-/* spacing for nav bar 
-li.nav_item, li.dropdown {
-   padding-top: 10px;
-}
-*/
-
-/* styling for each item in nav bar (DOESNT WORK) 
-li a, .dropbtn {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-*/
-
-/* when you hover over the nav bar and dropdown, it will change colors (DOESNT WORK)*/ 
-li a:hover, .dropdown:hover .dropbtn {
-  color: var(--primary);
 }
 
 /* dropdown in nav bar */
@@ -206,19 +195,6 @@ legend{
   color: white;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Setting background color of all elements in legend 
-legend * {
-  background-color: #98DFF14D;
-}
-
-/* style the fieldset and its border 
-fieldset {
-  background-color: white;
-  border-radius: 15px;
-  border-color: #0063b1;
-  border-style: solid;
 }
 
 /* styling for footer */
