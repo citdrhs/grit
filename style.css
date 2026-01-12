@@ -313,14 +313,14 @@ legend{
   margin-right: auto;
 }
 
-/* styling for main body of home page */
+/* styling for main body of home page 
 article{
   font-weight: lighter;
   border-radius: 15px;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
-}
+  text-align: left;
+} */
 
 /* center headings in the main body */
 article h3 {
@@ -362,7 +362,7 @@ section, .desc {
   text-align: center;
 }
 
-/* styling for paragraph about grit */
+/* styling for paragraph about grit 
 .aboutgrit {
   border: 2px solid#0063b1;
   padding: 20px;
@@ -370,7 +370,7 @@ section, .desc {
   background-color: white;
   font-size: 18px;
   border-radius: 20px;
-}
+} */
 
 /* container for about grit paragraph */
 .gritdesc {
@@ -445,7 +445,7 @@ tr:nth-child(even) {
   font-size: 32px; 
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 15px;
-  color: #fff
+  color: #000000;
 }
 
 .btn {
@@ -554,23 +554,7 @@ tr:nth-child(even) {
 
 /* general styling for buttons */
 
-/*
-.button, .buttonc {
-  border-radius: 5px;
-  text-decoration: none;
-  color:black;
-  background-color:white;
-  padding: 10px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-*/
+
 .button {
   border-radius: 5px;
   text-decoration: none;
