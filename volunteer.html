@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Volunteer – GRIT Conference · About CIT</title>
-  <link rel="icon" type="image/png" href="./Logo+Option+1..png" />
   <link href="style.css" rel="stylesheet" />
   <style>
     :root {
@@ -224,56 +223,7 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
-    </button>
-      <nav class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./citpage.html">About CIT</a>
-        <a href="./core_values.html">Core Values</a>
-        <div class="dropdown">
-          <button>Interviews ▾</button>
-          <div class="menu">
-            <a href="./Interviews_Guest.html">Guest Interviews from 2023</a>
-            <a href="./Interviews_Students.html">Student Interviews from 2023</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Get Involved ▾</button>
-          <div class="menu">
-            <a href="./volunteer.html">Volunteer</a>
-            <a href="./donate.html">Donate</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Media ▾</button>
-          <div class="menu">
-            <a href="./iPhotos.html">Photos from 2023</a>
-            <a href="./iVideos.html">Videos from 2023</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button>Featured ▾</button>
-          <div class="menu">
-            <a href="./2026colleges.html">Colleges from 2026</a>
-            <a href="./2026speakers.html">Speakers from 2026</a>
-            <a href="./featuredcolleges.html">Colleges from 2023</a>
-            <a href="./featuredspeakers.html">Speakers from 2023</a>
-            <a href="./featuredsponsor.html">Sponsors from 2023</a>
-            <a href="./vendor_hall_orgs.html">2023 Vendor Hall</a>
-          </div>
-        </div>
-        <a href="./iContactUs.html">Contact</a>
-      </nav>
-      <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="CITpicture">
-          <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
-        </a>
-    </div>
-  </header>
-
+  <div id="site-header"></div>
   <section class="hero">
     <div class="container hero-inner">
       <div>
@@ -321,20 +271,8 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
-  </footer>
-  <script>
-    const nav = document.querySelector('.nav');
-    const navToggle = document.querySelector('.nav-toggle');
-    if (nav && navToggle) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('nav-open');
-        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-    
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div id="site-footer"></div>
+  <script src="loadLayout.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
