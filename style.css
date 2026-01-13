@@ -756,7 +756,7 @@ figcaption {
  /* display: table;*/
 }
 
-/* make the title white */
+/* make the title black */
 .title {
   color: black;
 }
@@ -831,11 +831,6 @@ figcaption {
   content: "";
   clear: both;
  /* display: table;*/
-}
-
-/* make the title white */
-.title {
-  color: white;
 }
   .buttonc {
   border-radius: 5px;
