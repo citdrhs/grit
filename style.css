@@ -1,6 +1,7 @@
 
 /* ---------------GENERAL STYLING--------------- */
 
+/*Website Colors*/
 :root {
   --bg: rgb(255, 255, 255);
   --panel: #ffffff;
@@ -35,13 +36,6 @@ a {
 
 a:hover {
   color: var(--primary-2);
-}
-
-/*Image sizing*/
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .container {
@@ -100,6 +94,27 @@ ul.nav {
   min-width: auto;
   }
 
+/*---------CIT Logo---------*/
+.CITlogo {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 100px;
+}
+
+.CITlogo{
+      position: static;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
 
 /*---------------Gradient---------------*/
 body {
@@ -156,21 +171,7 @@ li.dropdown {
   display: block;
 }
 
-/* set size of grit logo in nav bar */
-.logo {
-  width:35px;
-  height:40px;
-  position: absolute;
-}
-
-/* set size and position of cit logo in nav bar */
-.CITlogo {
-  top: 15px;
-  width: 40px;
-  position: absolute;
-  right: 0;
-}
-
+/*----------Scroll Bar-----------*/
 /* Customize scrollbar (https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) */
 ::-webkit-scrollbar {
   width: 12px;
@@ -238,6 +239,13 @@ legend{
 
 .container{
   display: inline-block;
+}
+
+/*Image sizing*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .typewriter h1 {
@@ -309,26 +317,11 @@ legend{
   background: #98DFF14D;
 }
 
-/* styling main title of page 
-#title{
-  font-size: 40px; 
-  font-family: 'IBM Plex Mono', monospace;
-}
-*/
 /* center background image of header */
 .header_image{
   margin-left: auto;
   margin-right: auto;
 }
-
-/* styling for main body of home page 
-article{
-  font-weight: lighter;
-  border-radius: 15px;
-  color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  text-align: left;
-} */
 
 /* center headings in the main body */
 article h3 {
@@ -369,16 +362,6 @@ article h3 {
 section, .desc {
   text-align: center;
 }
-
-/* styling for paragraph about grit 
-.aboutgrit {
-  border: 2px solid#0063b1;
-  padding: 20px;
-  text-align: center;
-  background-color: white;
-  font-size: 18px;
-  border-radius: 20px;
-} */
 
 /* container for about grit paragraph */
 .gritdesc {
