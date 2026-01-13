@@ -15,6 +15,12 @@
   --radius: 16px;
 }
 
+/*Title format*/
+.brand{
+  font-weight:700;
+  letter-spacing:.3px
+}
+
 * {
   box-sizing: border-box;
 }
@@ -613,13 +619,90 @@ tr:nth-child(even) {
   transition: all 0.3 ease;
   box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);}
 
-/* styling for slideshow */
-iframe {
-  border: 1px solid black;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .button:hover{
+    background: linear-gradient(135deg, #507cfb, #1947ff);
+    box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+    transform: translateY(-2px);color: white;
+  }
+
+  .hero{
+    padding:48px 0 20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+
+  .hero h1{
+    font-size:clamp(28px,4.5vw,44px);
+    line-height:1.1;
+    margin:0 0 10px
+  }
+
+  .hero p{
+    margin:0;
+    color:var(--muted)
+  }
+
+  .section{
+    padding:28px 0
+  }
+
+  .card{
+    background:var(--panel);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:var(--shadow);
+    margin-bottom:30px
+  }
+
+  .card h2{
+    margin-top:0;
+    color:#6489b3
+  }
+
+  iframe{
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow)
+  }
+
+  figure{
+    margin:0;
+    text-align:center;
+    color:var(--muted)
+  }
+
+  figure img{
+    border-radius:12px;
+    max-width:100%;
+    height:auto;
+    box-shadow:var(--shadow)
+  }
+
+  fieldset{
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:12px;
+    padding:16px;
+    margin-top:20px;
+    background:var(--bg)
+  }
+
+  legend{
+    padding:0 12px;
+    color:var(--accent);
+    font-weight:600
+  }
+
+  .CITpicture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    margin-left: 16px;
+  }
 
 /* center title text for student samples */
 #student_samples h1 {
@@ -633,6 +716,7 @@ figcaption {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
 
 /* if the page is larger than 1000px, hallway pic and student statements will be side by side using flexbox */
 @media (min-width: 1000px) {
@@ -746,15 +830,6 @@ figcaption {
 .flex-container {
   display: flex;
   padding: 0px 20px 10px;
-} 
-
-/* styling each of the boxes for the guests */
-.card, .card2{
-  padding: 10px;
-  margin: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color:#0063b1; 
-   
 }
 
 /* Some left and right padding inside the container */
@@ -1035,10 +1110,180 @@ a{
 
 /*STUDENT AND GUEST INTERVIEWS PAGE*/
 
-.brand{
-  font-weight:700;
-  letter-spacing:.3px
+.grid{
+  display:grid;
+  gap:18px
 }
+
+.grid-2{
+  grid-template-columns:repeat(2,minmax(0,1fr))
+}
+
+.card{
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column
+}
+
+.card .media{
+  background:var(--panel-2);
+  aspect-ratio:16/9;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.card .media img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+.card .body{
+  padding:16px
+}
+
+.card h3{
+  margin:0 0 10px
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap
+}
+
+.btn:hover{
+  background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.note{
+  color:var(--muted);
+  text-align:center;
+  margin-top:6px
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+  gap: 30px; padding: 20px 0;
+  justify-content: center;
+}
+
+.video-card {
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+padding: 20px;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.video-head {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 15px;
+}
+
+.video-head .title {
+font-size: 1.1rem;
+font-weight: 600;
+text-align: left;
+}
+
+.video-head .btn {
+background: #0078ff;
+color: white;
+padding: 8px 16px;
+text-decoration: none;
+font-size: 0.9rem;
+font-weight: 500;
+transition: background 0.2s ease;
+border-radius: 999px;
+}
+
+.video-head .btn:hover {
+background: #005fcc;
+}
+
+.video-embed iframe {
+width: 100%;
+height: 220px;
+border: none;
+border-radius: 10px;
+}
+
+.CITpicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  margin-left: 16px;
+}
+
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:none;
+  font-size:1.8rem;
+  cursor:pointer;
+  padding:4px 8px;
+}
+.nav-toggle:focus-visible{
+  outline: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+/*DONATE PAGE*/
+
+.donate-section {
+  text-align: center;
+  padding: 60px 0;
+}
+.donate-box {
+  background: var(--panel);
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: var(--shadow);
+  display: inline-block;
+  max-width: 500px;
+}
+.donate-box p { color: var(--muted); }
+.donate-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);
+
+}
+.donate-button:hover { background: linear-gradient(135deg, #507cfb, #1947ff);
+  box-shadow: 0 6px 14px rgba(59, 104, 255, 0.4);
+  transform: translateY(-2px);color: white; 
+  cursor: pointer; }
 
 /* VENDOR HALL PAGE STYLING */
 /* By Aditi Inamdar */
