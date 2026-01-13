@@ -93,6 +93,13 @@ ul.nav {
   color:var(--primary)
 }
 
+/*Grit logo size*/
+.brand-logo {
+  height: flex;
+  max-height: 40px; 
+  min-width: auto;
+  }
+
 
 /*---------------Gradient---------------*/
 body {
@@ -114,12 +121,13 @@ body {
   background-repeat: no-repeat;
 }
 
+/*---------------Dropdown---------------*/
 /* dropdown in nav bar */
+
 li.dropdown {
   display: inline-block;
 }
 
-/* general styling for dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -554,22 +562,18 @@ tr:nth-child(even) {
 
 /* general styling for buttons */
 
-
-.button {
-  border-radius: 5px;
+.button{
+  display: inline-block;
+  background: linear-gradient(135deg, #5f8eff, #3b68ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
   text-decoration: none;
-  color:black;
-  background-color:white;
-  padding: 10px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
+  padding: 12px 30px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3 ease;
+  box-shadow: 0 4px 10px rgba(59, 104, 255, 0.3);}
 
 /* styling for slideshow */
 iframe {
