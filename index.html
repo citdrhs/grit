@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
 
-.nav {
+  .nav {
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -16,6 +16,7 @@
       padding:8px 12px;
       height:auto;
     }
+
     .nav-toggle {
       display: none;
       background: transparent;
@@ -24,24 +25,8 @@
       cursor: pointer;
       padding: 4px 8px;
     }
-    .nav-toggle:focus-visible {
-      outline: 2px solid var(--primary);
-      border-radius: 4px;
-    }
-
-    .CITpicture {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #ffffff;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-      margin-left: 16px;
-    }
     
-
+    /*Aligns navigation links*/
     .nav-links {
       display: flex;
       gap: 16px;
@@ -51,6 +36,7 @@
       justify-content: center;
     }
     
+    /*Formats navigation titles*/
     .nav-links a {
       color: var(--muted);
       font-weight: 500;
@@ -61,6 +47,7 @@
     .dropdown {
       position: relative; 
     }
+
     .dropdown > button {
       background: transparent;
       border: 0;
@@ -87,6 +74,7 @@
       box-shadow: var(--shadow);
       display: none;
     }
+
     .menu a {
       display: block;
       padding: 10px 12px;
@@ -98,11 +86,13 @@
       display: block;
     }
    
+    /*Sizing of page title*/
     .hero h1 {
       font-size: clamp(30px, 5vw, 50px);
       margin: 0;
       color: var(--accent);
     }
+    
     .hero p {
       color: var(--muted);
       font-size: 1.1rem;
@@ -140,14 +130,6 @@
       color: var(--muted);
       max-width: 800px;
       margin: auto;
-      text-align: center;
-    }
-
-  
-    footer {
-      margin-top: 11px;
-      padding: 28px 0 22px;
-      color: var(--muted);
       text-align: center;
     }
 
@@ -195,6 +177,29 @@
         display: flex;
         margin-left: 8px
       }
+
+      .dropdown {
+        width: 100%;
+      }
+
+      .dropdown > button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .dropdown .menu {
+        position: static;
+        min-width: 0;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        padding: 0 0 4px 16px;
+        border-radius: 0;
+      }
+      .dropdown .menu a {
+        padding: 4px 0;
+      }
+
       .countdown-container p {
         font-size: 75%;
       }
