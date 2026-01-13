@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <title>2023 Vendor Hall Organizations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="./Logo+Option+1..png" />
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
@@ -215,64 +214,18 @@
   </style>
 </head>
 <body>
-    <header>
-        <div class="container nav">
-          <a href="./index.html"><img src="./Logo+Option+1..png" alt="GRIT Conference Logo" class="brand-logo"></a>
-          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-            ☰
-        </button>
-            <nav class="nav-links">
-                <a href="./index.html">Home</a>
-                <a href="./citpage.html">About CIT</a>
-                <a href="./core_values.html">Core Values</a>
-                <div class="dropdown">
-                <button>Interviews ▾</button>
-                <div class="menu">
-                    <a href="./Interviews_Guest.html">Guest Interviews from 2023</a>
-                    <a href="./Interviews_Students.html">Student Interviews from 2023</a>
-                </div>
-                </div>
-                <div class="dropdown">
-                <button>Get Involved ▾</button>
-                <div class="menu">
-                    <a href="./volunteer.html">Volunteer</a>
-                    <a href="./donate.html">Donate</a>
-                </div>
-                </div>
-                <div class="dropdown">
-                <button>Media ▾</button>
-                <div class="menu">
-                    <a href="./iPhotos.html">Photos from 2023</a>
-                    <a href="./iVideos.html">Videos from 2023</a>
-                </div>
-                </div>
-                <div class="dropdown">
-                <button>Featured ▾</button>
-                <div class="menu">
-                    <a href="./2026colleges.html">Colleges from 2026</a>
-                    <a href="./2026speakers.html">Speakers from 2026</a>
-                    <a href="./featuredcolleges.html">Colleges from 2023</a>
-                    <a href="./featuredspeakers.html">Speakers from 2023</a>
-                    <a href="./featuredsponsor.html">Sponsors from 2023</a>
-                    <a href="./vendor_hall_org.html">2023 Vendor Hall </a>
-                </div>
-                </div>
-                <a href="./iContactUs.html">Contact</a>
-              </nav>
-              <a href="https://informationtechnology.henricoschools.us/" target="_blank" class="CITpicture">
-                <img src="citlogo.png" alt="CIT logo" class = "CITlogo">
-                </a>
-          </div>
-        </header>
-
+  <div id="site-header"></div>
   <section class="hero">
     <div class="container">
       <h1>2023 Vendor Hall</h1>
       <h2>Participants</h2>
     </div>
+    <!-- Custom GRIT logo -->
     <div class="grit-logo">
       <img src="grit_logo.png" alt="GRIT Conference Logo">
     </div>
+
+    <!-- List of organizations that had vendors at GRIT 2023-->
 
     <div class="org-list">
         <span> Old Dominion U.</span>
@@ -292,35 +245,15 @@
         <span>CoStar</span>
         <span>Dominion Energy</span>
         <span>Federal Reserve</span>
-        <span>Henrico City Public Schools</span>
+        <span>Henrico County Public Schools</span>
         <span>Henrico EDA</span>
         <span>J2 Innovations</span>
         <span>Markel</span>
     </div>
-    
   </section>
-
   
-  <footer>
-    <div>© <span id="year"></span> GRIT Conference · Authors: Tanushree S, Shlok J, Aditi I, Zainab S, Hunter C, Caleb T</div>
-  </footer>
-
-  <script>
-    const nav = document.querySelector('.nav');
-    const navToggle = document.querySelector('.nav-toggle');
-    if (nav && navToggle) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('nav-open');
-        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-
-    
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div id="site-footer"></div>
+  <script src="loadLayout.js"></script> <!-- Import universal JS with header, footer, and year -->
+  <script src="script.js"></script> <!-- Mobile nav menu and countdown code -->
 </body>
 </html>
-
-
-
-

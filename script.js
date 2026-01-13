@@ -1,35 +1,48 @@
-// var countDownDate = new Date("March 31, 2023 08:00:00").getTime();
+// Mobile navigation toggle
+const nav = document.querySelector('.nav');
+const navToggle = document.querySelector('.nav-toggle');
 
-// // Update the count down every 1 second
-// var x = setInterval(function() {
+if (nav && navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+}
+    
+// index.html countdown timer
+    document.getElementById('year') ? document.getElementById('year').textContent = new Date().getFullYear() : null;
+    function updateCountdown() {
+      const now = new Date();
+      const eventDate = new Date('2026-03-09T09:00:00-04:00');
+      const timeDiff = eventDate - now;
 
-//   // Get today's date and time
-//   var now = new Date().getTime();
+      // Set timer to 0:0:0:0 if it is past the event date
+      if (timeDiff <= 0) {
+        document.getElementById('days').textContent = '0';
+        document.getElementById('hours').textContent = '0';
+        document.getElementById('minutes').textContent = '0';
+        document.getElementById('seconds').textContent = '0';
+        return;
+      }
 
-//   // Find the distance between now and the count down date
-//   var distance = countDownDate - now;
+      // Mathematical operations for numerical time values
+      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-//   // Time calculations for days, hours, minutes and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      const daysElement = document.getElementById('days');
+      const hoursElement = document.getElementById('hours');
+      const minutesElement = document.getElementById('minutes');
+      const secondsElement = document.getElementById('seconds');
 
-//   // Display the result in the element with id="demo"
-//   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-//   + minutes + "m " + seconds + "s ";
+      if (daysElement && hoursElement && minutesElement && secondsElement) {
+        daysElement.textContent = days;
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+      }
+    }
 
-//   // If the count down is finished, write some text
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "TBD";
-//   }
-// }, 1000);
-
-
-
-
-// //typewriter animation
-
-
-
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
