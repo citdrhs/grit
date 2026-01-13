@@ -232,6 +232,42 @@ legend{
 /* ---------------HOME PAGE STYLING--------------- */
 /* Kera Parham: Home page */
 
+/*-------Countdown Timer-------*/
+.countdown-container {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      background: var(--panel);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+      padding: flex;
+    }
+    #countdown-timer {
+      justify-content: center;
+      gap: flex; gap: 2%;
+      margin-bottom: 2%;
+      color: var(--muted);
+      font-size: 250%;
+    }
+   
+    #countdown-timer span {
+      color: var(--accent);
+      font-size: 100%;
+      font-weight: 700;
+    }
+    #hours, #minutes, #seconds {
+      margin-left: 15px;
+    }
+    .countdown-date {
+      margin: 15px;
+    }
+    .countdown-container p {
+      color: var(--muted);
+      text-align: center;
+      margin: flex;
+      font-size: 165%;
+    }
 #title{
   font-size: 48px; 
   font-family: 'IBM Plex Mono', monospace;
