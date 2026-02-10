@@ -1,16 +1,21 @@
-name: Deploy PR Preview
-on: pull_request
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+name: Deploy to STAGING
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
 jobs:
-  deploy-preview:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Add build steps here
-      - name: Deploy PR Preview
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
         with:
-          publish_dir: ./ # Or your build directory
+          host: drhscit.org
+          port: 2323
+          username: gritstaging
+          key: ${{ secrets.SSH_KEY_GRIT_STAGING }}
+          script: |
+            cd /home/gritstaging/www
+            git pull origin main
