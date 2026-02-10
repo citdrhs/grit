@@ -13,4 +13,5 @@ jobs:
       - name: Deploy PR Preview
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./ # Or your build directory
