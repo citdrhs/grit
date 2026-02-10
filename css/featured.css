@@ -41,6 +41,10 @@
   object-fit: contain;
 }
 
+.college-cards-no-padding .card-media {
+  padding: 0;
+}
+
 .featured-card .card-body {
   padding: 20px;
 }

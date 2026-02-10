@@ -1,0 +1,56 @@
+/* --------------- VENDOR HALL SIGN UP PAGE --------------- */
+
+.vendor-section .container {
+  width: min(1280px, 95vw);
+}
+
+.vendor-box {
+  background: var(--panel);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  box-shadow: var(--shadow);
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vendor-box h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+
+.vendor-box p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.vendor-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  text-decoration: none;
+}
+
+.vendor-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.vendor-box .form-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}

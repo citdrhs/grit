@@ -53,7 +53,7 @@ img {
   position: relative;
   padding: 40px 0 80px;
   overflow: hidden;
-  background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.12), transparent)
+  background: radial-gradient(3000px 400px at 0% 0%, rgba(90,167,255,.25), transparent)
 }
 
 .hero-layout {
@@ -183,7 +183,7 @@ img {
 .cta-banner {
   width: 100%;
   padding: 36px 24px;
-  background: linear-gradient(135deg, var(--panel-2) 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 50%, #2563eb 100%);
   position: relative;
 }
 
@@ -279,7 +279,7 @@ img {
 
 /* Countdown */
 .countdown-section {
-  background: linear-gradient(135deg, var(--panel-2) 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 50%, #2563eb 100%);
   color: #fff;
   padding: 56px 24px;
   border-radius: var(--radius-lg);

@@ -80,7 +80,7 @@
 }
 
 .schedule-table th {
-  background: linear-gradient(135deg, var(--panel-2) 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 50%, #2563eb 100%);
   color: #fff;
   font-weight: 600;
   font-size: 0.9rem;
